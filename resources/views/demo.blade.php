@@ -433,17 +433,17 @@
       <!-- ===== Services Start ===== -->
       <section class="lj tp kr">
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+Amazing features to keep you connected.
+                               </h2>
+                <p class="bb on/5 wo/5 hq">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
@@ -503,17 +503,17 @@
       <!-- ===== Projects Start ===== -->
       <section class="pg pj vp mr oj wp nr">
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    We Offer Great Support at Your Schedule
+                </h2>
+                <p class="bb on/5 wo/5 hq">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
@@ -660,17 +660,17 @@
       <!-- ===== Testimonials Start ===== -->
       <section class="hj rp hr">
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    Student Testimonials
+                </h2>
+                <p class="bb on/5 wo/5 hq">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
@@ -770,17 +770,17 @@
       <!-- ===== Clients Start ===== -->
       <section class="pj vp mr">
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    Available hubs
+                </h2>
+                <p class="bb on/5 wo/5 hq">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
@@ -836,17 +836,17 @@
       <!-- ===== Blog Start ===== -->
       <section class="ji gp uq">
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    Latest Blogs & News
+                </h2>
+                <p class="bb on/5 wo/5 hq">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
@@ -961,17 +961,17 @@
         <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Let’s Stay Connected`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+        <div>
+            <div class="animate_top bb ze rj ki xn vq">
+                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    Let’s Stay Connected
+                </h2>
+                <p class="bb on/5 wo/5 hq">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
+                </p>
+            </div>
+        </div>
+
 
 
         </div>
