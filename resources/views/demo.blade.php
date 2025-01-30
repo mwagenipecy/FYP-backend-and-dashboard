@@ -954,11 +954,11 @@ Amazing features to keep you connected.
       <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">
         <!-- Bg Shapes -->
-        <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
-        <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
-        <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
-        <img src="images/shape-12.svg" alt="Shape" class="h p s" />
-        <img src="images/shape-13.svg" alt="Shape" class="h r q" />
+        <img src="{{ asset('/contact/shape-06 (1).svg') }}" alt="Shape" class="h aa y" />
+        <img src="{{ asset('/contact/shape-03.svg') }}" alt="Shape" class="h ca u" />
+        <img src="{{ asset('/contact/shape-07 (2).svg') }}" alt="Shape" class="h w da ee" />
+        <img src="{{ asset('/contact/shape-12.svg') }}" alt="Shape" class="h p s" />
+        <img src="{{ asset('/contact/shape-13.svg') }}" alt="Shape" class="h r q" />
 
         <!-- Section Title Start -->
         <div>
@@ -981,8 +981,8 @@ Amazing features to keep you connected.
           <div class="tc uf sn tf rn un zf xl:gap-10">
             <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
               <!-- Bg Shapes -->
-              <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
-              <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
+              <img src="{{ asset('/contact/shape-03.svg') }}" alt="Shape" class="h la x wd" />
+              <img src="{{ asset('/contact/shape-06 (1).svg') }}" alt="Shape" class="h la ma ne kf" />
 
               <div class="fb">
                 <h4 class="wj kk wm cc">Email Address</h4>
@@ -990,16 +990,13 @@ Amazing features to keep you connected.
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">Office Location</h4>
-                <p>76/A, Green valle, Califonia USA.</p>
+                <p>Dar es Salaam - Tanzania </p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">Phone Number</h4>
                 <p><a href="#">+009 8754 3433 223</a></p>
               </div>
-              <div class="fb">
-                <h4 class="wj kk wm cc">Skype Email</h4>
-                <p><a href="#"><span class="__cf_email__" data-cfemail="f3968b929e839f96b38a9c86819e929a9fdd909c9e">[email&#160;protected]</span></a></p>
-              </div>
+
 
               <span class="rc nd rh tm lc fb"></span>
 
@@ -1124,7 +1121,7 @@ Amazing features to keep you connected.
       <!-- ===== CTA Start ===== -->
       <section class="i pg gh ji">
   <!-- Bg Shape -->
-  <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
+  <img class="h p q" src="{{ asset('/contact/shape-16.svg') }}" alt="Bg Shape" />
 
   <div class="bb ye i z-10 ki xn dr">
     <div class="tc uf sn tn un gg">
@@ -1154,9 +1151,16 @@ Amazing features to keep you connected.
     <div class="ji gp">
       <div class="tc uf ap gg fp">
         <div class="animate_top zd/2 to/4">
-          <a href="index.html">
-            <img src="images/logo-light.svg" alt="Logo" class="om" />
-            <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
+          <a href="#" class="flex ">
+
+
+            <img class=" h-12 w-12 " src="{{ asset('/assets/img/udsmlogo.png') }}" alt="Logo Light" />
+            <div class="flex justify-between mx-4  item-center">
+            <h1 class="font-bold strong text-4xl mt-2 text-blue-700"> UHUB </h1>
+            <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
+
+            </div>
+
           </a>
 
           <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -1250,10 +1254,10 @@ Amazing features to keep you connected.
             <h4 class="kk wm tj ec">Services</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Web Development</a></li>
-              <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-              <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-              <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
+              <li><a href="#" class="sc xl vb">Online Tutor </a></li>
+              <li><a href="#" class="sc xl vb"> Project Tracking  </a></li>
+              <li><a href="#" class="sc xl vb">Real time update</a></li>
+              <li><a href="#" class="sc xl vb"> Online consultation </a></li>
             </ul>
           </div>
 
@@ -1314,7 +1318,7 @@ Amazing features to keep you connected.
       </div>
 
       <div class="animate_top">
-        <p>&copy; 2025 Base. All rights reserved</p>
+        <p>&copy; 2025 UHUB. All rights reserved</p>
       </div>
     </div>
     <!-- Footer Bottom -->
