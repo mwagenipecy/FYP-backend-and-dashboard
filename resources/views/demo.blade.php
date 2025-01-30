@@ -270,23 +270,34 @@
       <!-- ===== Team Start ===== -->
       <section class="i pg ji gp uq">
         <!-- Bg Shapes -->
-        <span class="rc h s r vd fd/5 fh rm"></span>
-        <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
-        <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
-        <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
-        <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
+        <span class=" rc h s r vd fd/5 fh rm">
+
+
+
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText">
+
+                 Meet With Our Creative Dedicated Team
+
+                 `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus
+
+
+            </p>
+        </span>
+        <img src="{{ asset('/assets/customer/shape-08.svg') }}" alt="Shape Bg" class="h q r" />
+        {{-- <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" /> --}}
+        <img src="{{ asset('/assets/customer/shape-10.svg') }}" alt="Shape" class="h _ aa" />
+        <img src="{{ asset('/assets/customer/shape-11.svg') }}" alt="Shape" class="of h m ba" />
 
         <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+        <div  >
+
+
+
+
+
+
+
+
 </div>
 
 
@@ -298,7 +309,7 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd" src="images/team-01.png" alt="Team" />
+                <img class="vd" src=" {{ asset('/assets/customer/team-01.png') }}" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -338,7 +349,7 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd" src="images/team-02.png" alt="Team" />
+                <img class="vd" src="{{ asset('/assets/customer/team-02.png') }}" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -378,7 +389,7 @@
             <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
-                <img class="vd" src="images/team-03.png" alt="Team" />
+                <img class="vd" src="{{ asset('/assets/customer/team-03.png') }}" alt="Team" />
 
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -442,42 +453,42 @@
           <div class="wc qf pn xo ng">
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-04.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-04.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-05.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-06.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-07.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-04.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
 
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
+              <img src="{{ asset('/assets/icon/icon-06.svg') }}" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
             </div>
@@ -486,86 +497,7 @@
       </section>
       <!-- ===== Services End ===== -->
 
-      <!-- ===== Pricing Table Start ===== -->
-      <section x-data="setup()" class="i pg fh rm ji gp uq">
-        <!-- Bg Shapes -->
-        <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
-        <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
-        <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
-        <img src="images/shape-12.svg" alt="Shape" class="h p s" />
-        <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-
-
-        </div>
-        <!-- Section Title End -->
-
-        <!-- Pricing switcher -->
-        <div class="tc wf xf jb og">
-          <span class="ek kk wm">Bill Monthly</span>
-          <button class="i rg gm" x-cloak @click="billPlan == 'monthly' ? billPlan = 'annually' : billPlan = 'monthly'">
-            <div class="fe id bl gh rg xk outline-none"></div>
-            <div
-              class="h vc wf xf ge jd cl jl ml mf hh rg yk ea fa"
-              :class="{ 'ff': billPlan == 'monthly', 'gf': billPlan == 'annually' }"
-            ></div>
-          </button>
-          <span class="ek kk wm">Bill Annually</span>
-        </div>
-
-        <!-- Pricing Table -->
-        <div class="bb ze i va ki xn yq bc">
-          <div class="wc qf pn xo jg">
-            <template x-for="(plan, i) in plans" x-key="i">
-              <!-- Pricing Item -->
-              <div class="animate_top rj sg hh sm vk xm hi nj oj">
-                <h4 x-text="plan.name" class="wj kk wm fb"></h4>
-
-                <div class="tc wf xf kg cc">
-                  <h2
-                    :class="plan.name == 'Basic' ? 'text-green-500' : ''"
-                    x-text="`$${billPlan == 'monthly' ? plan.price.monthly : plan.price.annually}`"
-                    class="fk _j kk wm"
-                  ></h2>
-                  <span x-text="billPlan == 'monthly' ? '/per month' : '/per year'" class="sc ak kk wm"></span>
-                </div>
-
-                <p class="ur dc">No credit card required</p>
-
-                <!-- Button -->
-                <a
-                  href="#"
-                  class="ek rg lk ml il gi ri"
-                  :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'"
-                >
-                  Try for free
-                </a>
-
-                <!-- Features -->
-                <ul class="tc sf bg ob fb">
-                  <template x-for="(feature, i) in plan.features" x-key="i">
-                    <li x-text="feature"></li>
-                  </template>
-                </ul>
-
-                <p class="kk wm">7-day free trial</p>
-              </div>
-            </template>
-          </div>
-        </div>
-      </section>
       <!-- ===== Pricing Table End ===== -->
 
       <!-- ===== Projects Start ===== -->
@@ -632,7 +564,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-01.png" alt="Project" />
+                <img src="{{ asset('/assets/project/project-01.png') }}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -654,7 +586,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 digital">
               <div class="c i pg sg z-1">
-                <img src="images/project-02.png" alt="Project" />
+                <img src="{{ asset('/assets/project/project-02.png') }}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -676,7 +608,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-04.png" alt="Project" />
+                <img src="{{ asset('/assets/project/project-03.png') }}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -698,7 +630,7 @@
             <!-- Project Item -->
             <div class="project-item wi fb vd vo/3 digital ecommerce">
               <div class="c i pg sg z-1">
-                <img src="images/project-03.png" alt="Project" />
+                <img src="{{ asset('/assets/project/project-03.png') }}" alt="Project" />
 
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
@@ -716,7 +648,11 @@
                 </div>
               </div>
             </div>
+
+
           </div>
+
+
         </div>
       </section>
       <!-- ===== Projects End ===== -->
@@ -754,21 +690,21 @@
                     <span class="rc je md/2 mh yg h q p"></span>
 
                     <div class="tc sf rn tn un zf dp">
-                      <img class="bf" src="images/testimonial.png" alt="User" />
+                      <img class="bf w-24 h-24" src="{{ asset('/assets/img/udsmlogo.png') }}" alt="User" />
 
                       <div>
-                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <img src="{{ asset('/assets/other/icon-quote.svg') }}" alt="Quote" />
                         <p class="ek ik xj _p kc fb">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
                         </p>
 
                         <div class="tc yf vf">
                           <div>
-                            <span class="rc ek xj kk wm zb">Devid Smith</span>
-                            <span class="rc">Founter @democompany</span>
+                            <span class="rc ek xj kk wm zb">Daily Quote </span>
+                            <span class="rc">Founder@coict </span>
                           </div>
 
-                          <img class="rk" src="images/brand-light-02.svg" alt="Brand" />
+                          {{-- <img class="rk" src="images/brand-light-02.svg" alt="Brand" /> --}}
                         </div>
                       </div>
                     </div>
@@ -803,10 +739,10 @@
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
-        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
-        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+        <img src="{{ asset('/assets/customer/shape-11.svg') }}" alt="Shape" class="of h ga ha ke" />
+        <img src="{{ asset('/assets/other/shape-07 (1).svg') }}" alt="Shape" class="h ia o ae jf" />
+        <img src="{{ asset('/assets/other/shape-14.svg') }}" alt="Shape" class="h ja ka" />
+        <img src="{{ asset('/assets/other/shape-15.svg') }}" alt="Shape" class="h q p" />
 
         <div class="bb ze i va ki xn br">
           <div class="tc uf sn tn xf un gg">
@@ -853,29 +789,45 @@
         <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
           <div class="wc rf qn zf cp kq xf wf">
             <a href="#" class="rc animate_top">
-              <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" />
+              <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
             </a>
+
+            {{-- <a href="#" class="rc animate_top">
+                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+              </a> --}}
+
+              <a href="#" class="rc animate_top">
+                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}" alt="Clients" />
+                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}" alt="Clients" />
+              </a>
+
+              <a href="#" class="rc animate_top">
+                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+              </a>
+
+
+
+
             <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-02.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-02.svg" alt="Clients" />
+              <img class="th wl ml il zl om" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}" alt="Clients" />
+              <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}" alt="Clients" />
             </a>
+
             <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-03.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-03.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-04.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-04.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-05.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-05.svg" alt="Clients" />
-            </a>
-            <a href="#" class="rc animate_top">
-              <img class="tk ml il zl om" src="images/brand-light-06.svg" alt="Clients" />
-              <img class="xc sk ml il zl nm" src="images/brand-dark-06.svg" alt="Clients" />
-            </a>
+                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
+              </a>
+
+
+              <a href="#" class="rc animate_top">
+                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}" alt="Clients" />
+                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}" alt="Clients" />
+              </a>
+
+
           </div>
         </div>
       </section>
@@ -905,7 +857,7 @@
             <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-01.png" alt="Blog" />
+                <img class="w-full" src="{{ asset('/assets/blog/blog-01.png') }}" alt="Blog" />
 
                 <div
                   class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
@@ -919,11 +871,11 @@
               <div class="yh">
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
+                    <img src="{{ asset('/assets/icon/icon-man.svg') }}" alt="User" />
                     <p>Musharof Chy</p>
                   </div>
                   <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
                     <p>25 Dec, 2025</p>
                   </div>
                 </div>
@@ -936,7 +888,7 @@
             <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-02.png" alt="Blog" />
+                <img class="w-full"  src="{{ asset('/assets/blog/blog-02.png') }}" alt="Blog" />
 
                 <div
                   class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
@@ -950,11 +902,11 @@
               <div class="yh">
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
+                    <img src="{{ asset('/assets/icon/icon-man.svg') }}" alt="User" />
                     <p>Musharof Chy</p>
                   </div>
                   <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
                     <p>25 Dec, 2025</p>
                   </div>
                 </div>
@@ -967,7 +919,7 @@
             <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
-                <img class="w-full" src="images/blog-03.png" alt="Blog" />
+                <img class="w-full"  src="{{ asset('/assets/blog/blog-03.png') }}" alt="Blog" />
 
                 <div
                   class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10"
@@ -981,11 +933,11 @@
               <div class="yh">
                 <div class="tc uf wf ag jq">
                   <div class="tc wf ag">
-                    <img src="images/icon-man.svg" alt="User" />
+                    <img src="{{ asset('/assets/icon/icon-man.svg') }}" alt="User" />
                     <p>Musharof Chy</p>
                   </div>
                   <div class="tc wf ag">
-                    <img src="images/icon-calender.svg" alt="Calender" />
+                    <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
                     <p>25 Dec, 2025</p>
                   </div>
                 </div>
