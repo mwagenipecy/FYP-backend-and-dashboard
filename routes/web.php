@@ -10,6 +10,10 @@ Route::get('test',function(){
  return view('demo');
 });
 
+Route::get('test2', function(){
+return view('demo2');
+});
+
 
 Route::get('home',function(){
     return view('frontend.welcome');
@@ -48,4 +52,4 @@ Route::get('view-blog',function(){
 
 Route::get('view-profile',function(){
     return view("frontend.profile_list");
-});
+})->name('student-profile');

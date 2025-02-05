@@ -37,9 +37,10 @@
                 <div class="vd wo/4 sd qo f ho oo wf yf" :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
                     <nav>
                         <ul class="tc _o sf yo cg ep">
-                            <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-                            <li><a href="index.html#features" class="xl">Features</a></li>
+                            <li><a href="{{ route("home_page") }}" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
+                            <li><a href=" " class="xl">Features</a></li>
                             <li class="c i" x-data="{ dropdown: false }">
+
                                 <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
                                     :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' ||
                                             page === 'signup' || page === '404' }">
@@ -52,20 +53,25 @@
                                 </a>
                                 <!-- Dropdown Start -->
                                 <ul class="a" :class="{ 'tc': dropdown }">
-                                    <li><a href="blog-grid.html" class="xl"
-                                            :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                                    <li><a href="blog-single.html" class="xl"
-                                            :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                                    <li><a href="" class=" text-white font-semibold"
+                                    <li><a href="{{ route("student-profile") }}" class="xl"
+                                            :class="{ 'mk': page === 'blog-grid' }">Students </a></li>
+
+                                    <li><a href=" " class="xl"
+                                            :class="{ 'mk': page === 'blog-single' }">Blogs </a></li>
+
+                                    {{-- <li><a href="" class=" text-white font-semibold"
                                             :class="{ 'mk': page === 'signin' }">Sign In</a></li>
+
                                     <li><a href="signup.html" class="xl font-semibold"
                                             :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
+
                                     <li><a href="404.html" class="xl"
-                                            :class="{ 'mk': page === '404' }">404</a></li>
+                                            :class="{ 'mk': page === '404' }">404</a></li> --}}
+
                                 </ul>
                                 <!-- Dropdown End -->
                             </li>
-                            <li><a href="index.html#support" class="xl">Support</a></li>
+                            <li><a href="#" class="xl">Support</a></li>
                         </ul>
                     </nav>
                     <div class="tc wf ig pb no">
