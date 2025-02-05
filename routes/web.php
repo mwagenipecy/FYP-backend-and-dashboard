@@ -41,3 +41,11 @@ Route::get("hub-page", function(){
 Route::get('view-blog',function(){
     return view('frontend.view_blog');
 })->name("view-blog");
+
+
+
+/************** PROFILE VIEW */
+
+Route::get('view-profile',function(){
+    return view("frontend.profile_list");
+});
