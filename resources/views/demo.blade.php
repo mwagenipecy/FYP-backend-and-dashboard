@@ -14,21 +14,17 @@
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 
-  <link rel="icon" href="favicon.ico"><link href="{{ asset('assets/hub.css') }}" rel="stylesheet"></head>
-  <body
-    x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
-    x-init="
-         darkMode = JSON.parse(localStorage.getItem('darkMode'));
-         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
-    :class="{'b eh': darkMode === true}"
-  >
+  <link rel="icon" href="favicon.ico"><link href="{{ asset('assets/hub.css') }}" rel="stylesheet">
+
+
+</head>
+
+
+<body x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }" x-init="  darkMode = JSON.parse(localStorage.getItem('darkMode'));   $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" :class="{'b eh': darkMode === true}" >
     <!-- ===== Header Start ===== -->
-    <header
-  class="g s r vd ya cj"
-  :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
-  @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
->
+    <header class="g s r vd ya cj"  :class="{ 'hh sm _k dj bl ll' : stickyMenu }"  @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false">
   <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+
     <div class="vd to/4 tc wf yf">
       <a href="" class="flex">
         <img class=" h-12 w-12 " src="{{ asset('/assets/img/udsmlogo.png') }}" alt="Logo Light" />
@@ -53,13 +49,15 @@
         </span>
       </button>
       <!-- Hamburger Toggle BTN -->
+
+
     </div>
 
-    <div
-      class="vd wo/4 sd qo f ho oo wf yf"
-      :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
-    >
-      <nav>
+
+    <div class="vd wo/4 sd qo f ho oo wf yf" :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"  >
+
+
+ <nav>
         <ul class="tc _o sf yo cg ep">
           <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
           <li><a href="index.html#features" class="xl">Features</a></li>
@@ -91,7 +89,7 @@
           </li>
           <li><a href="index.html#support" class="xl">Support</a></li>
         </ul>
-      </nav>
+ </nav>
 
       <div class="tc wf ig pb no">
 
@@ -99,9 +97,13 @@
         <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
         <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
       </div>
+
     </div>
   </div>
 </header>
+
+
+
 
     <!-- ===== Header End ===== -->
 
@@ -119,7 +121,8 @@
 
         <!-- Hero Content -->
         <div class="bb ze ki xn 2xl:ud-px-0">
-          <div class="tc _o">
+
+         <div class="tc _o">
 
             <div class="animate_left jn/2">
               <h1 class="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.</h1>
@@ -131,20 +134,17 @@
                 <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l"
                   >Get Started Now</a
                 >
-
                 <span class="tc sf">
                   <a href="#" class="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
                   <span class="inline-block">For any question or concern</span>
                 </span>
-
-
-
               </div>
             </div>
 
 
 
           </div>
+
 
           <div class="mt-10 overflow-hidden relative">
             <div class="flex animate-marquee space-x-28">
@@ -162,31 +162,12 @@
             --}}
             </div>
           </div>
-
-          <style>
-            @keyframes marquee {
-              from {
-                transform: translateX(0);
-              }
-              to {
-                transform: translateX(-100%);
-              }
-            }
-
-            .animate-marquee {
-              display: flex;
-              width: 200%; /* Twice the width to account for the duplicate content */
-              /* animation: marquee 1000s linear infinite; */
-            }
-          </style>
-
-
-
-
-
-
         </div>
       </section>
+
+
+
+
       <!-- ===== Hero End ===== -->
 
       <!-- ===== Small Features Start ===== -->
@@ -262,26 +243,26 @@
                 <span class="kk">SEE HOW WE WORK</span>
               </a>
             </div>
+
           </div>
         </div>
       </section>
+
       <!-- ===== About End ===== -->
 
       <!-- ===== Team Start ===== -->
       <section class="i pg ji gp uq">
-        <!-- Bg Shapes -->
         <span class=" rc h s r vd fd/5 fh rm">
-
-
-
-            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText">
-
-                 Meet With Our Creative Dedicated Team
-
-                 `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus
-
-
-            </p>
+            <div>
+                <div class="animate_top bb ze rj ki xn vq">
+                  <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+                    Meet With Our Creative Dedicated Team
+                  </h2>
+                  <p class="bb on/5 wo/5 hq">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                  </p>
+                </div>
+              </div>
         </span>
         <img src="{{ asset('/assets/customer/shape-08.svg') }}" alt="Shape Bg" class="h q r" />
         {{-- <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" /> --}}
@@ -289,19 +270,9 @@
         <img src="{{ asset('/assets/customer/shape-11.svg') }}" alt="Shape" class="of h m ba" />
 
         <!-- Section Title Start -->
-        <div  >
-
-
-
-
-
-
-
-
-</div>
-
-
         </div>
+
+
         <!-- Section Title End -->
 
         <div class="bb ze i va ki xn xq jb jo">
@@ -436,7 +407,7 @@
         <div>
             <div class="animate_top bb ze rj ki xn vq">
                 <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
-Amazing features to keep you connected.
+                     Amazing features to keep you connected.
                                </h2>
                 <p class="bb on/5 wo/5 hq">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
@@ -735,6 +706,8 @@ Amazing features to keep you connected.
           </div>
         </div>
       </section>
+
+
       <!-- ===== Testimonials End ===== -->
 
       <!-- ===== Counter Start ===== -->
@@ -1119,7 +1092,8 @@ Amazing features to keep you connected.
       <!-- ===== Contact End ===== -->
 
       <!-- ===== CTA Start ===== -->
-      <section class="i pg gh ji">
+
+<section class="i pg gh ji">
   <!-- Bg Shape -->
   <img class="h p q" src="{{ asset('/contact/shape-16.svg') }}" alt="Bg Shape" />
 

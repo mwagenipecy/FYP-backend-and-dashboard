@@ -231,6 +231,22 @@
     outline: auto;
   }
 
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: 200%; /* Twice the width to account for the duplicate content */
+    /* animation: marquee 1000s linear infinite; */
+  }
+
   /*
   Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
   */
