@@ -47,7 +47,7 @@
                 <!-- Blog Item -->
                 <div class="animate_top sg vk rm xm">
                     <div class="c rc i z-1 pg">
-                        <img class="w-full" src="{{ asset('/assets/blog/blog-02.png') }}" alt="Blog" />
+                        <img class="w-full" src="{{ asset('/assets/blog/image copy.png') }}" alt="Blog" />
 
                         <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
                             <a href="{{ route("view-blog") }}" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
@@ -55,16 +55,6 @@
                     </div>
 
                     <div class="yh">
-                        <div class="tc uf wf ag jq">
-                            <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/icon-man.svg') }}" alt="User" />
-                                <p>Musharof Chy</p>
-                            </div>
-                            <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
-                                <p>25 Dec, 2025</p>
-                            </div>
-                        </div>
                         <h4 class="ek tj ml il kk wm xl eq lb">
                             <a href="blog-single.html">9 simple ways to improve your design skills</a>
                         </h4>
@@ -82,16 +72,7 @@
                     </div>
 
                     <div class="yh">
-                        <div class="tc uf wf ag jq">
-                            <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/icon-man.svg') }}" alt="User" />
-                                <p>Musharof Chy</p>
-                            </div>
-                            <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
-                                <p>25 Dec, 2025</p>
-                            </div>
-                        </div>
+
                         <h4 class="ek tj ml il kk wm xl eq lb">
                             <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
                         </h4>

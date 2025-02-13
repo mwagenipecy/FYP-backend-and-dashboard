@@ -10,12 +10,12 @@
                     </div>
                     <div>
                         <h4 class="ek yj go kk wm xb">24/7 Support</h4>
-                        <p>.</p>
+                        <p>Supporting each other towards success.</p>
                     </div>
                 </div>
 
                 <!-- Small Features Item -->
-                <div class="animate_top kn to/3 tc cg oq">
+                <!-- <div class="animate_top kn to/3 tc cg oq">
                     <div class="tc wf xf cf ae cd rg nh">
                         <img src="{{ asset('/assets/icon/icon-02.svg') }}" alt="Icon" />
                     </div>
@@ -23,7 +23,7 @@
                         <h4 class="ek yj go kk wm xb">Take Ownership</h4>
                         <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Small Features Item -->
                 <div class="animate_top kn to/3 tc cg oq">

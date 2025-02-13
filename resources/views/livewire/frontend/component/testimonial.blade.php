@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Testimonials</title>
+    <title>Testimonials</title>
     <link rel="stylesheet" href="path/to/your/css/styles.css">
     <style>
     body {
@@ -14,7 +14,7 @@
         padding: 0;
     }
 
-    .testimonial-container {
+    .professional-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,7 +22,7 @@
         padding: 20px;
     }
 
-    .testimonial-wrapper {
+    .professional-wrapper {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -30,7 +30,7 @@
         padding-bottom: 20px;
     }
 
-    .testimonial {
+    .professional {
         background-color: #fff;
         flex: 0 0 400px;
         display: flex;
@@ -38,7 +38,7 @@
         align-items: center;
         text-align: center;
         width: 400px;
-        height: 200px;
+        height: 300px;
         margin: 20px;
         padding: 20px;
         border: 1px solid #ddd;
@@ -47,11 +47,11 @@
         transition: transform 0.3s ease;
     }
 
-    .testimonial:hover {
+    .professional:hover {
         transform: translateY(-10px);
     }
 
-    .testimonial img {
+    .professional img {
         border-radius: 15%;
         width: 80px;
         height: 80px;
@@ -73,7 +73,7 @@
     }
 
     @media (max-width: 768px) {
-        .testimonial {
+        .professional {
             flex: 0 0 70%;
             max-width: 70%;
             margin: 10px;
@@ -82,75 +82,129 @@
     }
 
     @media (max-width: 480px) {
-        .testimonial {
+        .professional {
             flex: 0 0 90%;
             max-width: 90%;
             margin: 10px;
             padding: 15px;
         }
 
-        .testimonial img {
+        .professional img {
             width: 60px;
             height: 60px;
         }
+    }
+
+    .professional-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .professional-text {
+        flex: 1;
+        text-align: left;
     }
     </style>
 </head>
 
 <body>
-    <div class="testimonial-container">
+    <div class="professional-container">
         <section class="hj rp hr">
             <!-- Section Title Start -->
             <div class="animate_top bb ze rj ki xn vq">
                 <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
-                    Student Testimonials
+                    Testimonials
                 </h2>
             </div>
             <!-- Section Title End -->
 
             <div class="bb ze ki xn ar">
-                <div class="animate_top jb cq testimonial-wrapper">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial">
-                        <div class="tc sf rn tn un zf dp">
-                            <img class="bf w-24 h-24" src="https://via.placeholder.com/80" alt="User 1" />
+                <div class="animate_top jb cq professional-wrapper">
+                    <!-- Professional 1 -->
+                    <div class="professional">
+                        <div class="professional-content">
+                            <div class="tc sf rn tn un zf dp">
+                                <img class="bf w-24 h-24" src="{{ asset('./assets/img/software_developer.jpg') }}"
+                                    alt="Software Developer" />
+                            </div>
+                            <div class="professional-text">
+                                <h3>Software Developer/Engineer</h3>
+                                <p>Specializes in developing applications and systems. Works with various programming
+                                    languages and frameworks to build software solutions.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial">
-                        <div class="tc sf rn tn un zf dp">
-                            <img class="bf w-24 h-24" src="https://via.placeholder.com/80" alt="User 2" />
+                    <!-- Professional 2 -->
+                    <div class="professional">
+                        <div class="professional-content">
+                            <div class="tc sf rn tn un zf dp">
+                                <img class="bf w-24 h-24" src="{{ asset('/public/assets/img/devops_engineer.jpg') }}"
+                                    alt="DevOps Engineer" />
+                            </div>
+                            <div class="professional-text">
+                                <h3>DevOps Engineer</h3>
+                                <p>Focuses on the integration and deployment of software, ensuring that development and
+                                    operations work smoothly together using tools like Docker and Kubernetes.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial">
-                        <div class="tc sf rn tn un zf dp">
-                            <img class="bf w-24 h-24" src="https://via.placeholder.com/80" alt="User 3" />
+                    <!-- Professional 3 -->
+                    <div class="professional">
+                        <div class="professional-content">
+                            <div class="tc sf rn tn un zf dp">
+                                <img class="bf w-24 h-24" src="/assets/img/testimonial3-removebg-review.png"
+                                    alt="Data Scientist" />
+                            </div>
+                            <div class="professional-text">
+                                <h3>Data Scientist/Analyst</h3>
+                                <p>Analyzes and interprets complex data to help organizations make informed decisions,
+                                    using tools and languages like Python, R, and SQL.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 4 -->
-                    <div class="testimonial">
-                        <div class="tc sf rn tn un zf dp">
-                            <img class="bf w-24 h-24" src="https://via.placeholder.com/80" alt="User 4" />
+                    <!-- Professional 4 -->
+                    <div class="professional">
+                        <div class="professional-content">
+                            <div class="tc sf rn tn un zf dp">
+                                <img class="bf w-24 h-24"
+                                    src="{{ asset('/assets/img/testimonial5-removebg-review.png') }}"
+                                    alt="testimonial4-removebg-review" />
+                            </div>
+                            <div class="professional-text">
+                                <h3>System Administrator</h3>
+                                <p>Manages and maintains an organization's IT infrastructure, ensuring systems are
+                                    running smoothly and securely.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 5 -->
-                    <div class="testimonial">
-                        <div class="tc sf rn tn un zf dp">
-                            <img class="bf w-24 h-24" src="https://via.placeholder.com/80" alt="User 5" />
+                    <!-- Professional 5 -->
+                    <div class="professional">
+                        <div class="professional-content">
+                            <div class="tc sf rn tn un zf dp">
+                                <img class="bf w-24 h-24"
+                                    src="{{ asset('/assets/img/testimonial5-removebg-review.png') }}"
+                                    alt="testimonial5-removebg-review" />
+                            </div>
+                            <div class="professional-text">
+                                <h3>Cybersecurity expert</h3>
+                                <p>Protects an organization's systems and data from cyber threats, focusing on threat
+                                    detection, response, and prevention.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Additional testimonials can be added here in the same format -->
+                    <!-- Additional professionals can be added here in the same format -->
                 </div>
             </div>
         </section>
         <button class="scroll-button"
-            onclick="document.querySelector('.testimonial-wrapper').scrollBy({ left: 300, behavior: 'smooth' });">
+            onclick="document.querySelector('.professional-wrapper').scrollBy({ left: 300, behavior: 'smooth' });">
             Scroll for more
         </button>
     </div>
