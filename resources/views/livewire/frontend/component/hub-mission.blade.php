@@ -1,82 +1,98 @@
-<div>
-    <section class="hj rp hr">
-        <!-- Section Title Start -->
-        <div>
-            <div class="animate_top bb ze rj ki xn vq">
-                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
-                    Our Mission
-                </h2>
-                <p class="bb on/5 wo/5 hq">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.
-                </p>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Section Title End -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .columns-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-        <div class="bb ze ki xn ar">
-          <div class="animate_top jb cq">
-            <!-- Slider main container -->
-            <div class="swiper testimonial-01">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="i hh rm sg vk xm bi qj">
-                    <!-- Border Shape -->
-                    <span class="rc je md/2 gh xg h q r"></span>
-                    <span class="rc je md/2 mh yg h q p"></span>
+    .column {
+        flex: 1;
+        margin: 30px;
+        box-sizing: border-box;
+    }
 
-                    <div class="tc sf rn tn un zf dp">
-                      <img class="bf w-24 h-24" src="{{ asset('/assets/img/udsmlogo.png') }}" alt="User" />
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        color: black;
+    }
 
-                      <div>
-                        <img src="{{ asset('/assets/other/icon-quote.svg') }}" alt="Quote" />
-                        <p class="ek ik xj _p kc fb">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
-                        </p>
+    p {
+        color: black;
+        margin-bottom: 15px;
+        text-align: justify;
+        /* This ensures the text is justified */
+    }
 
-                        <div class="tc yf vf">
-                          <div>
-                            <span class="rc ek xj kk wm zb">Daily Quote </span>
-                            <span class="rc">Founder@coict </span>
-                          </div>
+    @media (max-width: 768px) {
+        .column {
+            flex: 1 1 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+</head>
 
-                          {{-- <img class="rk" src="images/brand-light-02.svg" alt="Brand" /> --}}
+<body>
+    <div>
+        <section class="hj rp hr">
+            <!-- Section Title Start -->
+            <div class="bb ze ki xn ar">
+                <div class="animate_top jb cq">
+                    <!-- Columns Container -->
+                    <div class="columns-container">
+                        <!-- Column 1: Our Mission -->
+                        <div class="column">
+                            <h1>Our Mission</h1>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                Use open innovation to solve community challenges.
+                            </p>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                Improve standard of living and achieve national and sustainable development goals.
+                            </p>
                         </div>
-                      </div>
+                        <!-- Column 2: Our Vision -->
+                        <div class="column">
+                            <h1>Our Vision</h1>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                To become a leading institution in innovations with an aim of investing in developing
+                                students' skills and promoting open innovations by young people that contribute to the
+                                achievement of both national goals and sustainable development goals.
+                            </p>
+                        </div>
+                        <!-- Column 3: What We Do -->
+                        <div class="column">
+                            <h1>What We Do</h1>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                We train youths on how they can apply human centred design (HCD) to innovate sustainable
+                                solutions.
+                            </p>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                Allow students to conduct y-talks, organize events such as special
+                                workshops, seminars and hackathons.
+                            </p>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                We provide the lab space and seed funding to turn ideas into solutions.
+                            </p>
+                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+                                Y4C hub accepts successful applicants to undertake their practical training at Y4C
+                                which helps students gain different skills such as Technical, development, critical
+                                thinking skills, research and workspace experience.
+                            </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-
-              <!-- If we need navigation -->
-              {{-- <div class="tc wf xf fg jb">
-                <div
-                  class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
-                >
-                  <svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.52366 7.83336L7.99366 12.3034L6.81533 13.4817L0.333663 7.00002L6.81533 0.518357L7.99366 1.69669L3.52366 6.16669L13.667 6.16669L13.667 7.83336L3.52366 7.83336Z"
-                      fill=""
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="swiper-button-next c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
-                >
-                  <svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" fill="" />
-                  </svg>
-                </div>
-              </div>
- --}}
-
-
             </div>
-          </div>
-        </div>
-      </section>
-
-
+            <!-- Section Title End -->
+        </section>
     </div>
+</body>
+
+</html>
