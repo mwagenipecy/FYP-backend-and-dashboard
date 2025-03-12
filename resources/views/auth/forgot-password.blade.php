@@ -16,19 +16,41 @@
 
         <x-validation-errors class="mb-4" />
 
-        <form method="POST" action="{{ route('password.email') }}">
-            @csrf
+      
+        <h1 class="text-2xl font-bold mb-2">Reset your password</h1>
+                <p class="text-gray-600 mb-6">We'll email you instructions to reset your password. If you don't have access to your email anymore, you can try <a href="#" class="text-blue-600 hover:underline">account recovery</a>.</p>
 
-            <div class="block">
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            </div>
+                <!-- Form -->
+                <form method="POST" action="{{ route('password.update') }}">
+                @csrf
+                                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+                        <input type="email" id="email" placeholder="john.doe@company.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
 
-            <div class="flex items-center justify-end mt-4">
-                <x-button>
-                    {{ __('Email Password Reset Link') }}
-                </x-button>
-            </div>
-        </form>
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <input id="agree" type="checkbox" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+                            <label for="agree" class="ml-2 block text-sm text-gray-700">
+                                I'am agree to UHUB's 
+                                <a href="#" class="text-blue-600 hover:underline">Terms of Use</a> and 
+                                <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Reset password
+                    </button>
+                </form>
+
+                <p class="text-center mt-6 text-gray-600">
+                    If you still need help, contact 
+                    <a href="#" class="text-blue-600 hover:underline">Uhub Support</a>.
+                </p>
+
+
+
+
     </x-authentication-card>
 </x-guest-layout>

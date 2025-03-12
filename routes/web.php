@@ -26,6 +26,12 @@ Route::middleware([
 });
 
 
+Route::get('demo123',function(){
+
+  return view('welcome');
+});
+
+
 
 
 // front end
