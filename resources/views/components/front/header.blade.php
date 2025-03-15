@@ -69,10 +69,10 @@
                         </ul>
                     </nav>
                     <div class="tc wf ig pb no">
-                        <a href="signin.html"
+                        <a href="{{ route('login') }}"
                             :class="{ 'nk yl': page === 'home', 'ok': page === 'home' && stickyMenu }"
                             class="ek pk xl">Sign In</a>
-                        <a href="signup.html"
+                        <a href="{{ route('register') }}"
                             :class="{ 'hh/[0.15]': page === 'home', 'sh': page === 'home' && stickyMenu }"
                             class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
                     </div>

@@ -119,6 +119,9 @@
         }
     </style>
 </head>
+
+
+
 <body class="bg-gray-50">
     <div class="flex h-screen">
         <!-- Sidebar -->
@@ -400,7 +403,10 @@
             <main class="bg-white">
 
 
+
             @include('project')
+
+
 
 
             </main>

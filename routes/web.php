@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\Backend\Page\HubListController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('test',function(){
  return view('demo');
@@ -16,14 +17,33 @@ Route::get('home',function(){
    })->name("home_page");
 
 Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
+   // 'auth:sanctum',
+    config('jetstream.auth_session')])->group(function () {
+   
+    Route::get('/', function () {
+       return view('/dashboard'); 
     })->name('dashboard');
+
+
+
+
+    /******* HUB LIST */
+    Route::group(['prefix'=> 'hub'], function () {  
+
+        Route::get('/list',[HubListController::class,'index'] )->name('hub_list');
+
+    });
+
+
+
 });
+
+
+
+// Route::get('/dashboard', function () {
+//     dd('yes reach');
+// })->name('dashboard');
+
 
 
 Route::get('demo123',function(){

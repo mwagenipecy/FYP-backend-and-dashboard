@@ -6,26 +6,33 @@
                 <p class="text-gray-600 mb-6">Do you have an account? <a href="{{ route('login') }}" class="text-blue-600 hover:underline">Sign in</a></p>
 
                 <!-- Form -->
-                <form>
+                <form method="POST" action="{{ route('register') }}" class="space-y-4">
+                    @csrf
                     <div class="mb-4">
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your email</label>
-                        <input type="email" id="email" placeholder="name@company.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input name="email" type="email" id="email" placeholder="name@company.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <div class="mb-4">
                         <label for="fullname" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                        <input type="text" id="fullname" placeholder="e.g. Bonnie Green" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input name="name" type="text" id="fullname" placeholder="e.g. Bonnie Green" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <div class="mb-4">
                         <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Student Registration Number </label>
-                        <input type="text" id="regno" placeholder="2021-**-*****" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input  name="regno" type="text" id="regno" placeholder="2021-**-*****" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
 
                     </div>
                     <div class="mb-6">
                         <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
-                        <input type="password" id="password" placeholder="••••••••" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input name="password" type="password" id="password" placeholder="••••••••" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
+
+                    <div class="mb-6">
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1"> Confirm Password</label>
+                        <input name="password_confirmation" type="password" id="password" placeholder="••••••••" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
 
                     <div class="flex items-center mb-4">
                         <input id="remember" type="checkbox" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
