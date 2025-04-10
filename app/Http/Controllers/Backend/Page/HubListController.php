@@ -15,4 +15,11 @@ class HubListController extends Controller
 
     return view("backend.pages.hubs.hubList",compact("hubs"));
  }
+
+
+ public function viewSettings(){
+
+   return view('backend.pages.hubs.setting');
+
+ }
 }

@@ -2,9 +2,9 @@
 @section('main-content')
 
 
-    <div class=" flex  mt-12 flex-col">
+    <div class=" flex  mt-2 flex-col">
         <!-- Breadcrumb navigation -->
-        <div class="bg-white px-6 py-4 shadow-sm">
+        <div class="bg-white px-6 py-1 shadow-sm">
             <div class="flex items-center space-x-2 text-gray-600">
                 <a href="#" class="hover:text-blue-600">
                     <i class="fas fa-home"></i>

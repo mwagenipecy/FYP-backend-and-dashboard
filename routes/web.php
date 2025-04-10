@@ -1,7 +1,14 @@
 <?php
 
 use App\Http\Controllers\Backend\Page\HubListController;
+use App\Http\Controllers\MemberOnBoardingController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectStageController;
+use App\Http\Controllers\StaffController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FileManagementController;
+
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -17,11 +24,14 @@ Route::get('home',function(){
    })->name("home_page");
 
 Route::middleware([
-   // 'auth:sanctum',
-    config('jetstream.auth_session')])->group(function () {
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+    ])->group(function () {
    
-    Route::get('/', function () {
+    Route::get('/user-dashboard', function () {
        return view('/dashboard'); 
+
     })->name('dashboard');
 
 
@@ -29,14 +39,87 @@ Route::middleware([
 
     /******* HUB LIST */
     Route::group(['prefix'=> 'hub'], function () {  
-
+      
         Route::get('/list',[HubListController::class,'index'] )->name('hub_list');
+        Route::get('settings',[HubListController::class,'viewSettings'])->name('hub.settings');
+
+
+    });
+
+
+    /********************************* STAFF MANAGEMENT  ******************************/
+    Route::group(['prefix'=>'staff'], function(){
+        Route::get('list',[StaffController::class,'overView'])->name('staff.list');
+    });
+
+
+
+    /*******************************************MEMBER ONBOARDING PROCESS ********************/
+    Route::group(['prefix'=>'onboarding'],function(){
+
+        Route::get('member',[MemberOnBoardingController::class,'onboardingOverView'])->name('onboarding.member');
 
     });
 
 
 
+
+    /************************************ GENERAL SYSTEM USERS **************************/
+
+    Route::group(['prefix'=>'user'],function(){
+
+        Route::get('list',[UserController::class,'userList'])->name('user.list');
+
+        
+    });
+
+
+
+       /************************************ PROJECT MANAGEMENT **************************/
+
+       Route::group(['prefix'=>'project'],function(){
+
+        Route::get('list',[ProjectController::class,'index'])->name('project.list');
+        Route::get('show/{id}',[ProjectController::class,'show'])->name('projects.show');
+
+        
+    });
+
+
+
+
+
+
+       /************************************ STAGES MANAGEMENT **************************/
+
+       Route::group(['prefix'=>'stage'],function(){
+
+        Route::get('list',[ProjectStageController::class,'index'])->name('stage.list');
+        Route::get('show/{id}',[ProjectStageController::class,'show'])->name('stages.show');
+
+        
+    });
+
+
+
+    
+
+
+
+
 });
+
+
+
+
+  /************************************** DOCUMENT MANAGEMENT ************************/
+     // DOCUMENTS ROUTES
+     Route::get('/file-management', [FileManagementController::class, 'index'])->name('file.management');
+
+     Route::get('/document/preview', [FileManagementController::class, 'previewDocument'])
+         ->name('document.preview')
+         ->middleware(['signed']);
+
 
 
 
@@ -49,7 +132,7 @@ Route::middleware([
 Route::get('demo123',function(){
 
   return view('welcome');
-});
+})->name('stages.shosw');
 
 
 

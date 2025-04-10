@@ -8,9 +8,7 @@
                     <img src="{{ asset('/dashboard/mainLogo.png') }}"  class=" h-16"/>
                     </a>
                 </div>
-                
-              
-                
+                  
                 <ul class=" mb-4  ">
 
                     <li class="mb-2 ml-4">
@@ -64,45 +62,40 @@
                             </li>
                         </ul>
                     </li>
+
+
+
+
+                    <li class="mb-2 ml-4">
+                        <a href="" class="collapse-btn flex items-center w-full p-2 text-gray-500 font-medium rounded-lg hover:bg-gray-100">
+                            <i class="fas fa-shopping-bag mr-3 text-gray-400"></i>
+                            <span class="sidebar-text">  Ideation </span>
+                         
+                        </a>
+                       
+                    </li>
+
+
+
                     
                     <li class="mb-2 ml-4">
-                        <button class="collapse-btn flex items-center w-full p-2 text-gray-500 font-medium rounded-lg hover:bg-gray-100">
+                        <a href="{{ route('onboarding.member') }}" class="collapse-btn flex items-center w-full p-2 text-gray-500 font-medium rounded-lg hover:bg-gray-100">
                             <i class="fas fa-shopping-bag mr-3 text-gray-400"></i>
-                            <span class="sidebar-text">E-commerce</span>
-                            <svg class="w-5 h-5 ml-auto sidebar-text" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <span class="sidebar-text"> Member Onboarding </span>
+                            <!-- <svg class="w-5 h-5 ml-auto sidebar-text" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul class="submenu ml-2">
-                            <li>
-                                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
-                                    <span class="sidebar-text">Products</span>
-                                </a>
-                            </li>
-                          
-                        </ul>
+                            </svg> -->
+                        </a>
+                       
                     </li>
                     
                     <li class="mb-2 ml-4">
-                        <button class="collapse-btn flex items-center w-full p-2 text-gray-500 font-medium rounded-lg hover:bg-gray-100">
+                        <a href="{{ route('user.list') }}" class=" flex items-center w-full p-2 text-gray-500 font-medium rounded-lg hover:bg-gray-100">
                             <i class="fas fa-users mr-3 text-gray-400"></i>
                             <span class="sidebar-text">User Manager </span>
-                            <svg class="w-5 h-5 ml-auto sidebar-text" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul class="submenu ml-2">
-                            <li>
-                                <a href="#" class="flex  ml-6 items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
-                                    <span class="sidebar-text"> Members </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex  ml-6  items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
-                                    <span class="sidebar-text"> Staffs </span>
-                                </a>
-                            </li>
-                        </ul>
+                          
+                            </a>
+                       
                     </li>
                     
 
@@ -123,10 +116,18 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flex  ml-6  items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                                <a href="{{ route('staff.list') }}" class="flex  ml-6  items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
                                     <span class="sidebar-text"> Staffs </span>
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="{{ route('hub.settings') }}" class="flex  ml-6  items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                                    <span class="sidebar-text"> Settings </span>
+                                </a>
+                            </li>
+
+
                         </ul>
                     </li>
                     
