@@ -15,7 +15,7 @@
             <div class="tc _o">
 
                 <div class="animate_left jn/2">
-                    <h1 class="fk vj zp or kk wm wb">Welcome to Centralized Online Hub platform in COICT</h1>
+                    <h1 class="fk vj zp or kk wm wb text-black ">Welcome to Centralized Online Hub platform in COICT</h1>
                     <p class="fq">
                         Let’s innovate together – explore,collaborate, network with peers, and take your journey to the
                         next level.
@@ -31,17 +31,28 @@
             </div>
 
             <div class="mt-10 overflow-hidden relative">
+
+
                 <div class="flex animate-marquee items-center gap-x-12 md:gap-x-16 lg:gap-x-20">
-                    <img src="{{ asset('/assets/hub/udict.svg') }}" class="w-14 md:w-16 lg:w-20 object-contain"
-                        alt="udict-logo">
-                    <img src="{{ asset('/assets/hub/finhub-removebg-preview.png') }}"
-                        class="w-14 md:w-16 lg:w-20 object-contain" alt="finhub-logo">
-                    <img src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}"
-                        class="w-14 md:w-16 lg:w-20 object-contain" alt="dlab-logo">
-                    <img src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}"
-                        class="w-14 md:w-16 lg:w-20 object-contain" alt="y4c-logo">
-                    <img src="{{ asset('/assets/hub/image.png') }}" class="w-14 md:w-16 lg:w-20 object-contain"
-                        alt="image-logo">
+
+                 @forelse($hubList as $hub)
+
+                 <a href="{{ route('hub_page',$hub->id) }}"> 
+
+                 <img src="{{ asset($hub->image) }}" 
+                    class="w-14 md:w-16 lg:w-20 h-14 md:h-16 lg:h-20 rounded-full object-cover" 
+                    alt="{{ $hub->name }}-logo">
+
+                 </a>
+
+
+                 @empty
+
+
+
+                 @endforelse
+
+
                 </div>
 
 

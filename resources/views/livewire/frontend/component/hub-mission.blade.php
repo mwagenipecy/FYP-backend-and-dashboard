@@ -55,37 +55,23 @@
                                 Use open innovation to solve community challenges.
                             </p>
                             <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                Improve standard of living and achieve national and sustainable development goals.
+                                {{ $this->hub->mission }}
                             </p>
                         </div>
                         <!-- Column 2: Our Vision -->
                         <div class="column">
                             <h1>Our Vision</h1>
                             <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                To become a leading institution in innovations with an aim of investing in developing
-                                students' skills and promoting open innovations by young people that contribute to the
-                                achievement of both national goals and sustainable development goals.
+                               {{ $this->hub->vision }}
                             </p>
                         </div>
                         <!-- Column 3: What We Do -->
                         <div class="column">
                             <h1>What We Do</h1>
                             <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                We train youths on how they can apply human centred design (HCD) to innovate sustainable
-                                solutions.
+                               {{ $this->hub->description }}
                             </p>
-                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                Allow students to conduct y-talks, organize events such as special
-                                workshops, seminars and hackathons.
-                            </p>
-                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                We provide the lab space and seed funding to turn ideas into solutions.
-                            </p>
-                            <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                                Y4C hub accepts successful applicants to undertake their practical training at Y4C
-                                which helps students gain different skills such as Technical, development, critical
-                                thinking skills, research and workspace experience.
-                            </p>
+                           
                         </div>
                     </div>
                 </div>

@@ -1,85 +1,53 @@
 <div>
     <!-- ===== Blog Start ===== -->
-    <section class="ji gp uq">
+    <section class="py-1 bg-gray-50">
         <!-- Section Title Start -->
-        <div>
-            <div class="animate_top bb ze rj ki xn vq">
-                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
-                    Latest Events & Activities
-                </h2>
-                <p class="bb on/5 wo/5 hq">
-                    Get the ongoing and upcoming activities and events done by the College
-                </p>
-            </div>
+        <div class="text-center mb-12 animate_top">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Latest Events & Activities
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Get the ongoing and upcoming activities and events done by the College
+            </p>
         </div>
-        {{-- </div> --}}
         <!-- Section Title End -->
 
-        <div class="bb ye ki xn vq jb jo">
-            <div class="wc qf pn xo zf iq">
-                <!-- Blog Item -->
-                <div class="animate_top sg vk rm xm">
-                    <div class="c rc i z-1 pg">
-                        <img class="w-full" src="{{ asset('/assets/blog/image.png') }}" alt="Blog" />
-
-                        <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                            <a href="{{ route("view-blog") }}" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
+        <!-- Blog Cards Start -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                @foreach ([
+                    ['title' => 'Free advertising for your online business', 'image' => '/assets/project/project-03.png', 'date' => '25 Dec, 2025'],
+                    ['title' => '10 Tips to Improve Your SEO Ranking', 'image' => '/assets/project/project-03.png', 'date' => '12 Jan, 2025'],
+                    ['title' => 'Why Branding Matters in 2025', 'image' => '/assets/project/project-03.png', 'date' => '5 Feb, 2025'],
+                    ['title' => 'Understanding Customer Behavior Online', 'image' => '/assets/project/project-03.png', 'date' => '20 Mar, 2025'],
+                ] as $blog)
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden animate_top">
+                        <div class="relative">
+                            <img src="{{ asset($blog['image']) }}" alt="Blog"
+                                 class="w-full h-48 object-cover" />
+                            <div class="absolute bottom-4 right-4 z-10">
+                                <a href="{{ route('view-blog') }}"
+                                   class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-center text-sm text-gray-500 mb-2 space-x-2">
+                                <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calendar" class="w-4 h-4" />
+                                <span>{{ $blog['date'] }}</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800 hover:text-blue-600">
+                                <a href="{{ route('view-blog') }}">
+                                    {{ $blog['title'] }}
+                                </a>
+                            </h3>
                         </div>
                     </div>
-
-                    <div class="yh">
-                        <div class="tc uf wf ag jq">
-                            <!-- <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/image.png') }}" alt="User" />
-
-                            </div> -->
-                            <!-- <div class="tc wf ag">
-                                <img src="{{ asset('/assets/icon/icon-calender.svg') }}" alt="Calender" />
-                                <p>25 Dec, 2025</p>
-                            </div> -->
-                        </div>
-                        <h4 class="ek tj ml il kk wm xl eq lb">
-                            <a href="blog-single.html">Free advertising for your online business</a>
-                        </h4>
-                    </div>
-                </div>
-
-                <!-- Blog Item -->
-                <div class="animate_top sg vk rm xm">
-                    <div class="c rc i z-1 pg">
-                        <img class="w-full" src="{{ asset('/assets/blog/image copy.png') }}" alt="Blog" />
-
-                        <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                            <a href="{{ route("view-blog") }}" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="yh">
-                        <h4 class="ek tj ml il kk wm xl eq lb">
-                            <a href="blog-single.html">9 simple ways to improve your design skills</a>
-                        </h4>
-                    </div>
-                </div>
-
-                <!-- Blog Item -->
-                <div class="animate_top sg vk rm xm">
-                    <div class="c rc i z-1 pg">
-                        <img class="w-full" src="{{ asset('/assets/blog/blog-03.png') }}" alt="Blog" />
-
-                        <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                            <a href="{{ route("view-blog") }}" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="yh">
-
-                        <h4 class="ek tj ml il kk wm xl eq lb">
-                            <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
-                        </h4>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
+        <!-- Blog Cards End -->
     </section>
     <!-- ===== Blog End ===== -->
 </div>

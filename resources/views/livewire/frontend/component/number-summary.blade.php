@@ -9,19 +9,19 @@
         <div class="bb ze i va ki xn br">
             <div class="tc uf sn tn xf un gg">
                 <div class="animate_top me/5 ln rj">
-                    <h2 class="gk vj zp or kk wm hc">85</h2>
+                    <h2 class="gk vj zp or kk wm hc">{{ $totalStudents }}</h2>
                     <p class="ek bk aq">students</p>
                 </div>
                 <div class="animate_top me/5 ln rj">
-                    <h2 class="gk vj zp or kk wm hc">63</h2>
+                    <h2 class="gk vj zp or kk wm hc">{{ $totalIdeas }}</h2>
                     <p class="ek bk aq">ideas</p>
                 </div>
                 <div class="animate_top me/5 ln rj">
-                    <h2 class="gk vj zp or kk wm hc">55</h2>
+                    <h2 class="gk vj zp or kk wm hc">{{ $totalProjects }}</h2>
                     <p class="ek bk aq">projects</p>
                 </div>
                 <div class="animate_top me/5 ln rj">
-                    <h2 class="gk vj zp or kk wm hc">46</h2>
+                    <h2 class="gk vj zp or kk wm hc">{{$successfullyProject}}</h2>
                     <p class="ek bk aq">successful projects</p>
                 </div>
             </div>

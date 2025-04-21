@@ -19,45 +19,23 @@
 
         <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
             <div class="wc rf qn zf cp kq xf wf">
-                <a href="{{ route("hub_page") }}" class="rc animate_top">
-                    <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
-                    <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
-                </a>
 
-                {{-- <a href="{{ route("hub_page") }}" class="rc animate_top">
-                <img class="th wl ml il zl om" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
-                <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/udict.svg') }}" alt="Clients" />
-                </a> --}}
-
-                <a href="{{ route("hub_page") }}" class="rc animate_top">
-                    <img class="th wl ml il zl om" src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}"
-                        alt="Clients" />
-                    <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}"
-                        alt="Clients" />
-                </a>
-
-                <a href="{{ route("hub_page") }}" class="rc animate_top">
-                    <img class="th wl ml il zl om" src="{{ asset('/assets/hub/finhub-removebg-preview.png') }}"
-                        alt="Clients" />
-                    <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/finhub-removebg-preview.png') }}"
-                        alt="Clients" />
-                </a>
+            @forelse($hubList as $hub)
+    <div class="flex flex-col items-center space-y-2 rc animate_top">
+        <a href="{{ route('hub_page', $hub->id) }}">
+            <img class="w-24 h-24 rounded-full object-cover" src="{{ asset($hub->image) }}" alt="{{ $hub->name }}" />
+        </a>
+        <p class="text-sm text-gray-700 font-medium text-center">{{ $hub->name }}</p>
+    </div>
+@empty
+    <!-- Optional: Add a fallback message -->
+    <p class="text-gray-500 text-sm">No hubs found.</p>
+@endforelse
 
 
+            
 
-
-                <a href="{{ route("hub_page") }}" class="rc animate_top">
-                    <img class="th wl ml il zl om" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}"
-                        alt="Clients" />
-                    <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/dlab-removebg-preview.png') }}"
-                        alt="Clients" />
-                </a>
-
-                <a href="{{ route("hub_page") }}" class="rc animate_top">
-                    <img class="th wl ml il zl om" src="{{ asset('/assets/hub/image.png') }}" alt="Clients" />
-                    <img class="xc sk ml il zl nm" src="{{ asset('/assets/hub/image.png') }}" alt="Clients" />
-                </a>
-
+          
 
 
 

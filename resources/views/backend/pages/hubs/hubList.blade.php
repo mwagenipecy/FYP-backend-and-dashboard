@@ -31,17 +31,17 @@
 
             @include('components.backend.card-metrics',[
                 'firstCardTitle' => "Total Hubs",
-                'firstValue'=>20,
+                'firstValue'=>$totalHubs,
                 'visible'=>true,
                 'secondCardTitle' => "Active Hubs",
                 'visible2'=>true,
-                'secondValue' => 10,
+                'secondValue' => $activeHubs,
                 'thirdCardTitle' => "Inactive Hubs",
                 'visible3'=>true,
-                'thirdValue' => 10,
+                'thirdValue' => $totalHubs - $activeHubs,
                 'fourthCardTitle' => "Total Projects",
                 'visible4'=>true,
-                'fourthValue' => 10,
+                'fourthValue' => $totalProject,
             ])
 
 

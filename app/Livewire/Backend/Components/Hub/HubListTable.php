@@ -113,7 +113,7 @@ class HubListTable extends Component
         // Get supervisors for the filter dropdown
         $supervisors = User::whereHas('supervisedHubs')->get();
         
-        // Build query with filters
+        //// Build query with filters
         $hubs = Hub::query()
             ->when($this->search, function ($query) {
                 return $query->where(function ($q) {

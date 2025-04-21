@@ -138,15 +138,30 @@
                         
                         @if(isset($showActions[$hub->id]))
                         <div class="absolute right-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg z-50">
-                            <div class="py-1">
-                                <button 
-                                    type="button"
-                                    wire:click="confirmDelete({{ $hub->id }})" 
-                                    class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
-                                >
-                                    <i class="fas fa-trash mr-2"></i> Delete
-                                </button>
-                            </div>
+                           
+                        <div class="py-1 relative space-y-1">
+                            <!-- Delete Button -->
+                            <button 
+                                type="button"
+                                wire:click="confirmDelete({{ $hub->id }})" 
+                                class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100 flex items-center"
+                            >
+                                <i class="fas fa-trash mr-2"></i> Delete
+                            </button>
+
+                            <!-- Edit Button -->
+                            <button 
+                                type="button"
+                                wire:click="editHub({{ $hub->id }})" 
+                                class="w-full text-left px-4 py-2 text-sm text-blue-600 hover:bg-gray-100 flex items-center"
+                            >
+                                <i class="fas fa-edit mr-2"></i> Edit
+                            </button>
+                        </div>
+
+
+
+
                         </div>
                         @endif
                     </td>

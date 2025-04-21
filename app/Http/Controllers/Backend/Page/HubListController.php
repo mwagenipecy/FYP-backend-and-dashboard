@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend\Page;
 
 use App\Http\Controllers\Controller;
 use App\Models\Hub;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class HubListController extends Controller
@@ -13,7 +14,16 @@ class HubListController extends Controller
 
     $hubs= Hub::get();
 
-    return view("backend.pages.hubs.hubList",compact("hubs"));
+    $totalHubs=Hub::count();
+    $activeHubs=Hub::where('status','active')->count();
+    $totalProject=Project::count();
+
+    return view("backend.pages.hubs.hubList",
+    ["hubs"=>$hubs,
+    "totalHubs"=>$totalHubs,
+    "activeHubs"=>$activeHubs,
+    "totalProject"=>$totalProject
+      ]);
  }
 
 

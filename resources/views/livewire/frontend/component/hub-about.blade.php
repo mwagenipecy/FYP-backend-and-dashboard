@@ -4,7 +4,7 @@
         <div class=" w-full bg-white  rounded-lg overflow-hidden flex flex-col md:flex-row">
             <!-- Left Side - Image -->
             <div class="md:w-1/2">
-                <img src="{{ asset('/assets/hub/y4c-removebg-preview.png') }}" alt="Hub Image"
+                <img src="{{ asset( $this->hub->image) }}" alt="Hub Image"
                     class="w-full h-full object-cover">
             </div>
 
@@ -15,19 +15,15 @@
 
                 </p>
                 <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                    Y4C is a convening and training space with an aim to invest in open innovation by young people that
-                    contribute to both National goals and sustainable development goals.
+                   {{  $this->hub->about }}
                 </p>
-                <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                    The Y4C hub provides unique value in its
-                    emphasis on human centered design (HCD) and challenge-
-                    driven approaches where projects are directly linked to solving real challenges facing the
-                    society.</p>
+
 
                 <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-                    The Y4C hub is housed at the University of Dar es Salaam College of ICT, and was established in
-                    collaboration between UDSM-COICT and UNICEF Tanzania signed on September 2016
-                 </p>
+                   {{  $this->hub->description }}
+                </p>
+
+            
             </div>
         </div>
 

@@ -9,6 +9,9 @@
                 </a>
             </div>
         </div>
+
+
+        <livewire:project-idea.create />
         
         <!-- Search and Filters -->
         <div class="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6 mt-5">

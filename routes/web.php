@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\Backend\Page\HubListController;
+use App\Http\Controllers\HubManagementController;
 use App\Http\Controllers\MemberOnBoardingController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ProjectIdeaController;
 use App\Http\Controllers\ProjectStageController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\UserController;
@@ -22,6 +24,13 @@ Route::get('test',function(){
 Route::get('home',function(){
     return view('frontend.welcome');
    })->name("home_page");
+
+
+   Route::get('/',function(){
+    return view('frontend.welcome');
+   })->name("home_page");
+
+
 
 Route::middleware([
     'auth:sanctum',
@@ -102,6 +111,19 @@ Route::middleware([
 
 
 
+
+         /************************************ PROJECT IDEA MANAGEMENT **************************/
+
+         Route::group(['prefix'=>'idea'],function(){
+
+            Route::get('list',[ProjectIdeaController::class,'index'])->name('idea.list');
+            Route::get('show/{id}',[ProjectIdeaController::class,'show'])->name('project-ideas.show');
+    
+            
+        });
+
+
+
     
 
 
@@ -132,17 +154,21 @@ Route::middleware([
 Route::get('demo123',function(){
 
   return view('welcome');
-})->name('stages.shosw');
+})->name('project-ideas.create');
+
+
+
+Route::get('demo12343',function(){
+
+    return view('welcome');
+  })->name('project-ideas.showxx');
 
 
 
 
 // front end
 
-//********************** HUB LIST  */
-Route::get("hub-page", function(){
- return view ("frontend.hub_page");
-})->name('hub_page');
+
 
 
 
@@ -157,4 +183,18 @@ Route::get('view-blog',function(){
 
 Route::get('view-profile',function(){
     return view("frontend.profile_list");
+});
+
+
+
+
+/****************************************** PROJECT FRONTEND URLs */
+Route::prefix('frontend')->group(function(){
+ 
+
+    /***************************** HUB LIST URL *********************/
+  //  Route::get('hubs',[HubManagementController::class,'hubList'])->name('hubs.list');
+        Route::get("hub-page/{id}", [HubManagementController::class,'viewHub'])->name('hub_page');
+
+
 });

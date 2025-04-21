@@ -81,6 +81,12 @@ class Setting extends Component
     
     public function saveHub()
     {
+
+    //    if($this->hub->about && $this->hub->mission && $this->hub->vision ){
+    //         $this->status = 'active';
+    //     }else{
+    //         $this->status = 'pending';
+    //     }
         // Validate the input
         $this->validate();
         

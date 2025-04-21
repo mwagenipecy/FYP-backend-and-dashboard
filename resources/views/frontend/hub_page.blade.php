@@ -2,7 +2,7 @@
 @section("front-end")
 
 
-<livewire:frontend.component.hub-welcome />
+<livewire:frontend.component.hub-welcome  :hubId="$hub->id"/>
 
 
 <div class="bg-[#EB688C] text-white text-center py-4 px-6 shadow-xl  flex items-center justify-center animate-bounce">
@@ -16,14 +16,14 @@
 
 
 
-<livewire:frontend.component.hub-about />
+<livewire:frontend.component.hub-about   :hubId="$hub->id"/>
 
 
-<livewire:frontend.component.hub-mission />
+<livewire:frontend.component.hub-mission   :hubId="$hub->id"/>
 
 
 
-<livewire:frontend.component.blog />
+<livewire:frontend.component.blog   :hubId="$hub->id" />
 
 
 
@@ -40,7 +40,7 @@
       <div class="text-center">
         <p class="text-subtitle text-primary mb-2">LOCATION</p>
         <p class="text-body-sm mb-2"> University Of Dar es Salaam - Tanzania  </p>
-        <p class="text-stats-xl"> COICT, B208</p>
+        <p class="text-stats-xl"> {{ $hub->address }} </p>
       </div>
 
       <!-- Availability Status -->

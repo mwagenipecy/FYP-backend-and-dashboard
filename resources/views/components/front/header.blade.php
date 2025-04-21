@@ -38,9 +38,9 @@
                     <nav>
                         <ul class="tc _o sf yo cg ep">
                             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-                            <li><a href="index.html#features" class="xl">Features</a></li>
-                            <li class="c i" x-data="{ dropdown: false }">
-                                <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
+                            <!-- <li><a href="index.html#features" class="xl">Features</a></li> -->
+                            <!-- <li class="c i" x-data="{ dropdown: false }"> -->
+                                <!-- <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
                                     :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' ||
                                             page === 'signup' || page === '404' }">
                                     Pages
@@ -49,9 +49,9 @@
                                         <path
                                             d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                                     </svg>
-                                </a>
+                                </a> -->
                                 <!-- Dropdown Start -->
-                                <ul class="a" :class="{ 'tc': dropdown }">
+                                <!-- <ul class="a" :class="{ 'tc': dropdown }">
                                     <li><a href="blog-grid.html" class="xl"
                                             :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
                                     <li><a href="blog-single.html" class="xl"
@@ -62,9 +62,9 @@
                                             :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
                                     <li><a href="404.html" class="xl"
                                             :class="{ 'mk': page === '404' }">404</a></li>
-                                </ul>
+                                </ul> -->
                                 <!-- Dropdown End -->
-                            </li>
+                            <!-- </li> -->
                             <li><a href="index.html#support" class="xl">Support</a></li>
                         </ul>
                     </nav>

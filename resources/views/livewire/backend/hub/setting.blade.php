@@ -22,23 +22,31 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Hub Image -->
                 <div class="col-span-1 md:col-span-2 flex flex-col items-center">
-                    <div class="w-32 h-32 mb-4 overflow-hidden rounded-full">
-                        @if($image && !$newImage)
-                            <img src="{{ asset($image) }}" alt="{{ $name }}" class="w-full h-full object-cover">
-                        @elseif($newImage)
-                            <img src="{{ $newImage->temporaryUrl() }}" alt="New Image" class="w-full h-full object-cover">
-                        @else
-                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
-                                <span class="text-gray-500">No Image</span>
-                            </div>
-                        @endif
-                    </div>
-                    <label for="newImage" class="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
-                        Change Image
-                    </label>
-                    <input id="newImage" type="file" wire:model="newImage" class="hidden" accept="image/*">
-                    @error('newImage') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                <!-- Image Preview -->
+                <div class="w-32 h-32 mb-4 overflow-hidden rounded-full">
+                    @if ($newImage)
+                        <img src="{{ $newImage->temporaryUrl() }}" alt="New Image" class="w-full h-full object-cover">
+                    @elseif ($image)
+                        <img src="{{ asset($image) }}" alt="{{ $name }}" class="w-full h-full object-cover">
+                    @else
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-500">No Image</span>
+                        </div>
+                    @endif
                 </div>
+
+                <!-- File Upload Button -->
+                <label for="newImage" class="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
+                    Change Image
+                </label>
+                <input id="newImage" type="file" wire:model="newImage" class="hidden" accept="image/*">
+
+                <!-- Error Message -->
+                @error('newImage') 
+                    <span class="text-red-500 text-sm mt-2">{{ $message }}</span> 
+                @enderror
+            </div>
+
 
                 <!-- Name -->
                 <div>

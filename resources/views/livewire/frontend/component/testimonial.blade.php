@@ -1,213 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<div>
+<section class="py-16 bg-white relative">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Title + Arrows -->
+        <div class="flex justify-between items-center mb-12">
+    <div>
+        <h2 class="text-2xl font-bold text-gray-900">
+            <span class="text-black">What Our</span>
+            <span class="text-blue-600"> Clients</span>
+            <span class="text-black"> Say</span>
+        </h2>
+        <p class="text-sm text-gray-600 mt-1">Real experiences from students and others we've supported.</p>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <link rel="stylesheet" href="path/to/your/css/styles.css">
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        margin: 0;
-        padding: 0;
-    }
-
-    .professional-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .professional-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .professional {
-        background-color: #fff;
-        flex: 0 0 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 400px;
-        height: 300px;
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-
-    .professional:hover {
-        transform: translateY(-10px);
-    }
-
-    .professional img {
-        border-radius: 15%;
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-    }
-
-    .scroll-button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .scroll-button:hover {
-        background-color: #0056b3;
-    }
-
-    @media (max-width: 768px) {
-        .professional {
-            flex: 0 0 70%;
-            max-width: 70%;
-            margin: 10px;
-            padding: 15px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .professional {
-            flex: 0 0 90%;
-            max-width: 90%;
-            margin: 10px;
-            padding: 15px;
-        }
-
-        .professional img {
-            width: 60px;
-            height: 60px;
-        }
-    }
-
-    .professional-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .professional-text {
-        flex: 1;
-        text-align: left;
-    }
-    </style>
-</head>
-
-<body>
-    <div class="professional-container">
-        <section class="hj rp hr">
-            <!-- Section Title Start -->
-            <div class="animate_top bb ze rj ki xn vq">
-                <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
-                    Testimonials
-                </h2>
-            </div>
-            <!-- Section Title End -->
-
-            <div class="bb ze ki xn ar">
-                <div class="animate_top jb cq professional-wrapper">
-                    <!-- Professional 1 -->
-                    <div class="professional">
-                        <div class="professional-content">
-                            <div class="tc sf rn tn un zf dp">
-                                <img class="bf w-24 h-24" src="{{ asset('./assets/img/software_developer.jpg') }}"
-                                    alt="Software Developer" />
-                            </div>
-                            <div class="professional-text">
-                                <h3>Software Developer/Engineer</h3>
-                                <p>Specializes in developing applications and systems. Works with various programming
-                                    languages and frameworks to build software solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Professional 2 -->
-                    <div class="professional">
-                        <div class="professional-content">
-                            <div class="tc sf rn tn un zf dp">
-                                <img class="bf w-24 h-24" src="{{ asset('/public/assets/img/devops_engineer.jpg') }}"
-                                    alt="DevOps Engineer" />
-                            </div>
-                            <div class="professional-text">
-                                <h3>DevOps Engineer</h3>
-                                <p>Focuses on the integration and deployment of software, ensuring that development and
-                                    operations work smoothly together using tools like Docker and Kubernetes.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Professional 3 -->
-                    <div class="professional">
-                        <div class="professional-content">
-                            <div class="tc sf rn tn un zf dp">
-                                <img class="bf w-24 h-24" src="/assets/img/testimonial3-removebg-review.png"
-                                    alt="Data Scientist" />
-                            </div>
-                            <div class="professional-text">
-                                <h3>Data Scientist/Analyst</h3>
-                                <p>Analyzes and interprets complex data to help organizations make informed decisions,
-                                    using tools and languages like Python, R, and SQL.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Professional 4 -->
-                    <div class="professional">
-                        <div class="professional-content">
-                            <div class="tc sf rn tn un zf dp">
-                                <img class="bf w-24 h-24"
-                                    src="{{ asset('/assets/img/testimonial5-removebg-review.png') }}"
-                                    alt="testimonial4-removebg-review" />
-                            </div>
-                            <div class="professional-text">
-                                <h3>System Administrator</h3>
-                                <p>Manages and maintains an organization's IT infrastructure, ensuring systems are
-                                    running smoothly and securely.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Professional 5 -->
-                    <div class="professional">
-                        <div class="professional-content">
-                            <div class="tc sf rn tn un zf dp">
-                                <img class="bf w-24 h-24"
-                                    src="{{ asset('/assets/img/testimonial5-removebg-review.png') }}"
-                                    alt="testimonial5-removebg-review" />
-                            </div>
-                            <div class="professional-text">
-                                <h3>Cybersecurity expert</h3>
-                                <p>Protects an organization's systems and data from cyber threats, focusing on threat
-                                    detection, response, and prevention.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Additional professionals can be added here in the same format -->
-                </div>
-            </div>
-        </section>
-        <button class="scroll-button"
-            onclick="document.querySelector('.professional-wrapper').scrollBy({ left: 300, behavior: 'smooth' });">
-            Scroll for more
+    <!-- Arrows -->
+    <div class="flex space-x-2">
+        <button class="w-8 h-8 border border-red-500 text-red-500 rounded-full flex items-center justify-center hover:bg-red-500 hover:text-white transition">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button class="w-8 h-8 border border-gray-700 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-700 hover:text-white transition">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
         </button>
     </div>
-</body>
+</div>
 
-</html>
+        <!-- Testimonials -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            @foreach ([1, 2, 3] as $i)
+            <div class="group bg-gray-50 hover:bg-white transition-all duration-300 p-6 rounded-lg shadow hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
+    <div class="flex items-center gap-4 mb-4">
+        <img src="{{ asset('/assets/project/image (' . (10 + $i) . ').png') }}" class="h-12 w-12 rounded-full object-cover border-2 border-yellow-400">
+        <div>  
+            <div class="flex items-center mb-1">
+                @for ($j = 0; $j < 4; $j++)
+                    <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l..."/>
+                    </svg>
+                @endfor
+                <span class="text-xs text-gray-500 ml-2">4.0 / 5.0 Reviews</span>
+            </div>
+            <h4 class="font-semibold text-sm">
+                @if($i === 1) I Helped Build It — And Learned So Much!
+                @elseif($i === 2) Real Project, Real Experience
+                @else From Zero to Confident in Tech
+                @endif
+            </h4>
+        </div>
+    </div>
+    <p class="text-sm text-gray-700">
+        @if($i === 1)
+            Being part of the project team taught me how to manage timelines, collaborate, and deliver real solutions.
+        @elseif($i === 2)
+            I joined as a volunteer and ended up learning frontend and backend development while supporting the project rollout.
+        @else
+            This platform gave me hands-on experience managing tasks and troubleshooting — things no classroom ever taught me.
+        @endif
+    </p>
+    <p class="mt-2 text-xs text-gray-500">
+        @if($i === 1) — Neema M., IT Student
+        @elseif($i === 2) — Asha N., Project Support
+        @else — Juma K., Tech Intern
+        @endif
+    </p>
+</div>
+
+            @endforeach
+        </div>
+    </div>
+    </section>
+
+</div>
+
