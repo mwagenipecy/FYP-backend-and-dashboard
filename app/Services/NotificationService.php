@@ -56,10 +56,21 @@ class NotificationService
             'type' => $type,
         ];
 
-        foreach ($users as $user) {
-            $notificationData['greeting'] = 'Hello ' . $user->name . '!';
-            $user->notify(new ProjectNotification($notificationData));
+
+        foreach ((array)$users as $user) {
+            $notificationData['greeting'] = 'Hello ' . $user['name'] . '!';
+
+            $user = User::find($user['id']);
+
+            if ($user) {
+
+                $user->notify(new ProjectNotification($notificationData));
+            }
+
+          //  $user->notify(new ProjectNotification($notificationData));
         }
+
+       
     }
 
     /**

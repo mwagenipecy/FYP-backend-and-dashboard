@@ -63,7 +63,7 @@ class Index extends Component
             $query->where('hub_id', $this->hubFilter);
         }
         
-        $projects = $query->latest()->paginate(10);
+        $projects = $query->latest()->paginate(12);
         $hubs = \App\Models\Hub::all();
         
         return view('livewire.project.index', [

@@ -11,10 +11,12 @@ class Create extends Component
 {
     public $title;
     public $description;
+    public $idea_type;
     
     protected $rules = [
         'title' => 'required|min:3|max:45',
         'description' => 'required|min:10',
+        'idea_type'=>'required'
     ];
 
     public function submit()
@@ -26,6 +28,7 @@ class Create extends Component
             'description' => $this->description,
             'status' => 'submitted',
             'user_id' => Auth::id(),
+            'idea_type'=>$this->idea_type
         ]);
 
         // Record in activity log
@@ -36,10 +39,15 @@ class Create extends Component
             'issue_date' => now(),
         ]);
 
+
+
         // Find admin/reviewers to notify
         $reviewers = \App\Models\User::whereHas('role', function ($query) {
             $query->where('name', 'Admin')->orWhere('name', 'Reviewer');
         })->get();
+
+
+       
 
         // Notify reviewers about new idea
         if ($reviewers->count() > 0) {
@@ -56,7 +64,7 @@ class Create extends Component
         $this->reset(['title', 'description']);
         session()->flash('message', 'Project idea submitted successfully!');
         
-        return redirect()->route('project-ideas.index');
+        return redirect()->route('idea.list');
     }
 
     public function render()

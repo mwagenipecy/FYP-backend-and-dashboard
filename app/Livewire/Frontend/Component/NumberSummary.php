@@ -4,6 +4,7 @@ namespace App\Livewire\Frontend\Component;
 
 use App\Models\Idea;
 use App\Models\Project;
+use App\Models\ProjectIdea;
 use App\Models\User;
 use Livewire\Component;
 
@@ -22,7 +23,7 @@ class NumberSummary extends Component
     public function mount(){
 
         $this->totalProjects=Project::count();
-        $this->totalIdeas=Idea::count();
+        $this->totalIdeas=ProjectIdea::count();
         $this->successfullyProject=Project::where('status','completed')->count();
 
         $this->totalStudents=User::count();

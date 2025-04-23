@@ -5,8 +5,8 @@
         <ul class="space-y-2 font-medium">
             <li>
                 <a href="{{ route('dashboard') }}"
-                    class="flex  {{ request()->is('user-dashboard*') ? 'rounded-md bg-blue-500 text-white' : '' }}  items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                    <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white  {{ request()->is('user-dashboard*') ? 'rounded-md bg-blue-500 text-white' : '' }}  "
+                    class="flex  {{ request()->is('dashboard*') ? 'rounded-md bg-blue-500 text-white' : '' }}  items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white  {{ request()->is('dashboard*') ? 'rounded-md bg-blue-500 text-white' : '' }}  "
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                         <path
                             d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
@@ -33,20 +33,6 @@
             </li>
 
             <li>
-                <a href="{{ route('project.list') }}"
-                    class="flex items-center   {{ request()->is('project*') ? 'rounded-md bg-blue-500 text-white' : '' }}  p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                    <svg class="flex-shrink-0 w-5 h-5 text-gray-500 {{ request()->is('project*') ? 'rounded-md bg-blue-500 text-white' : '' }}   transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white 
-                      "
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 3v4a1 1 0 0 1-1 1H5m8-2h3m-3 3h3m-4 3v6m4-3H8M19 4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1ZM8 12v6h8v-6H8Z" />
-                    </svg>
-                    <span class="flex-1 ms-3 whitespace-nowrap">Project management </span>
-                </a>
-            </li>
-
-            <li>
                 <a href="{{ route('idea.list') }}"  
                     class="flex items-center p-2   {{ request()->is('idea*') ? 'rounded-md bg-blue-500 text-white' : '' }}
                      text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -62,6 +48,24 @@
                     <span class="flex-1 ms-3 whitespace-nowrap"> Idea Management</span>
                 </a>
             </li>
+
+
+            
+            <li>
+                <a href="{{ route('project.list') }}"
+                    class="flex items-center   {{ request()->is('project*') ? 'rounded-md bg-blue-500 text-white' : '' }}  p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class="flex-shrink-0 w-5 h-5 text-gray-500 {{ request()->is('project*') ? 'rounded-md bg-blue-500 text-white' : '' }}   transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white 
+                      "
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 3v4a1 1 0 0 1-1 1H5m8-2h3m-3 3h3m-4 3v6m4-3H8M19 4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1ZM8 12v6h8v-6H8Z" />
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Project management </span>
+                </a>
+            </li>
+
+
 
             <li>
                 <a href="

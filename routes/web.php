@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\Page\HubListController;
 use App\Http\Controllers\HubManagementController;
+use App\Http\Controllers\IndividualProjectController;
 use App\Http\Controllers\MemberOnBoardingController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectIdeaController;
@@ -28,7 +29,7 @@ Route::get('home',function(){
 
    Route::get('/',function(){
     return view('frontend.welcome');
-   })->name("home_page");
+   });
 
 
 
@@ -42,6 +43,13 @@ Route::middleware([
        return view('/dashboard'); 
 
     })->name('dashboard');
+
+
+
+    Route::get('/dashboard', function () {
+        return redirect()->to('user-dashboard');
+ 
+     });
 
 
 
@@ -94,6 +102,19 @@ Route::middleware([
         
     });
 
+
+
+
+    //*********************************** individual Project  */
+    Route::group(['prefix'=>'individual-project'],function(){
+
+        Route::get('dashboard/{id}',[IndividualProjectController::class,'overview'])->name('individual.project.list');
+
+
+
+
+        
+     });
 
 
 
@@ -197,4 +218,16 @@ Route::prefix('frontend')->group(function(){
         Route::get("hub-page/{id}", [HubManagementController::class,'viewHub'])->name('hub_page');
 
 
+});
+
+
+
+
+
+
+// testing apis
+
+Route::get('test12',function(){
+
+    return view('dex');
 });

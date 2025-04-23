@@ -29,8 +29,8 @@
 
 <section
   aria-label="Location and Availability"
-  class="relative z-20 overflow-hidden bg-cover bg-center"
-  style="background-image: url('{{ asset('/assets/img/map3.jpeg') }}')"
+  class="relative z-20 overflow-hidden bg-cover bg-center bg-blue-50 "
+  style="background-: "
 >
   <div class="container mx-auto px-4 py-10">
     <div

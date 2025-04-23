@@ -23,7 +23,7 @@
                         projects.
                     </p>
 
-                    <a href="https://www.youtube.com/I" data-fslightbox class="vc wf hg mb">
+                    <a href="https://www.youtube.com/watch?v=gJBP0iOE9PU&pp=ygUFY29pY3Q%3D" data-fslightbox class="vc wf hg mb">
                         <span class="tc wf xf be dd rg i gh ua">
                             <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                             <img src="{{ asset('/assets/customer/icon-play.svg') }}" alt="Play" />

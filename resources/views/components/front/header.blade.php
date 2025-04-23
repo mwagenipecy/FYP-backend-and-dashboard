@@ -37,7 +37,6 @@
                 <div class="vd wo/4 sd qo f ho oo wf yf" :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
                     <nav>
                         <ul class="tc _o sf yo cg ep">
-                            <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
                             <!-- <li><a href="index.html#features" class="xl">Features</a></li> -->
                             <!-- <li class="c i" x-data="{ dropdown: false }"> -->
                                 <!-- <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
@@ -65,7 +64,6 @@
                                 </ul> -->
                                 <!-- Dropdown End -->
                             <!-- </li> -->
-                            <li><a href="index.html#support" class="xl">Support</a></li>
                         </ul>
                     </nav>
                     <div class="tc wf ig pb no">

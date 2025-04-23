@@ -22,7 +22,7 @@
                     </p>
 
                     <div class="tc tf yo zf mb">
-                        <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
+                        <a href="{{ route('register') }}" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
                         <span class="tc sf">
 
                         </span>

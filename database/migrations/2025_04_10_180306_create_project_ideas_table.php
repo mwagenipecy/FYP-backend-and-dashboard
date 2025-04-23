@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 45);
             $table->text('description');
+            $table->string('idea_type')->nullable();
             $table->string('status', 45)->default('submitted'); // submitted, under_review, needs_qualification, approved, rejected
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

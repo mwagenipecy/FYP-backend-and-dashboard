@@ -15,6 +15,7 @@ class ProjectIdea extends Model
         'description',
         'status',
         'user_id',
+        'idea_type'
     ];
 
     public function user()

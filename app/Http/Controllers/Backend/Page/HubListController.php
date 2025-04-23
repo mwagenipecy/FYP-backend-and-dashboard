@@ -30,6 +30,6 @@ class HubListController extends Controller
  public function viewSettings(){
 
    return view('backend.pages.hubs.setting');
-
+   
  }
 }

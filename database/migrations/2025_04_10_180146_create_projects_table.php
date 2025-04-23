@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title', 45);
-            $table->text('description', 45)->nullable();
+            $table->text('description', 1000)->nullable();
             $table->string('status', 45)->default('draft'); // draft, under_review, approved, in_progress, completed
             $table->string('stage', 45)->nullable();
+            $table->unsignedBigInteger('idea_id')->nullable();
             $table->unsignedBigInteger('hub_id')->nullable();
             $table->foreign('hub_id')->references('id')->on('hubs')->onDelete('set null');
             $table->timestamps();

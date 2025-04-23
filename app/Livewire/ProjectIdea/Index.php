@@ -6,6 +6,7 @@ use App\Models\ProjectIdea;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Illuminate\Support\Facades\DB;
 
 class Index extends Component
 {
@@ -18,6 +19,10 @@ class Index extends Component
         'search' => ['except' => ''],
         'statusFilter' => ['except' => ''],
     ];
+
+
+
+    
 
     public function updatingSearch()
     {
@@ -54,6 +59,31 @@ class Index extends Component
         
         return view('livewire.project-idea.index', [
             'projectIdeas' => $projectIdeas,
+            'metrics'=> [
+                'ideaMonthlyTrend' => $this->loadChartData()
+            ],
         ]);
+    }
+
+
+    public function loadChartData(){
+
+        $monthlyIdeas = Projectidea::select(
+            DB::raw('MONTH(created_at) as month'),
+            DB::raw('COUNT(*) as total')
+        )
+        ->groupBy(DB::raw('MONTH(created_at)'))
+        ->orderBy('month')
+        ->pluck('total', 'month');
+
+    // Fill in missing months with 0
+    $ideaCounts = [];
+    for ($i = 1; $i <= 12; $i++) {
+        $ideaCounts[] = $monthlyIdeas->get($i, 0);
+    }
+
+
+
+    return $ideaCounts;
     }
 }

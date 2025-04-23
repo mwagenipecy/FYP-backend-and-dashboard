@@ -17,6 +17,7 @@ class Project extends Model
         'status',
         'stage',
         'hub_id',
+        'idea_id'
     ];
 
     public function users()
@@ -27,6 +28,10 @@ class Project extends Model
     }
 
 
+    public function Idea(){
+
+        return $this->belongsTo(ProjectIdea::class,'idea_id');
+    }
 
 
 

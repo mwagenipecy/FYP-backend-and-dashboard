@@ -45,6 +45,5 @@
 
 {{-- general footer  --}}
 
-<livewire:frontend.component.general-footer />
 
 @endsection
