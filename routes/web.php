@@ -110,8 +110,12 @@ Route::middleware([
 
         Route::get('dashboard/{id}',[IndividualProjectController::class,'overview'])->name('individual.project.list');
 
-
-
+        // document management 
+        Route::group(['prefix'=>'documents'],function(){
+        Route::get('list',[IndividualProjectController::class,'viewDocument'])->name('document.list');
+        Route::get('/upload',[IndividualProjectController::class,'uploadDocument'])->name('documents.upload');
+        Route::get('/view/{id}',[IndividualProjectController::class,'viewIndividualDocument'])->name('documents.view');
+        });
 
         
      });

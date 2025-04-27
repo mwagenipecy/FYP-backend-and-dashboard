@@ -14,4 +14,21 @@ class IndividualProjectController extends Controller
            session()->put('project',$project);
         return view('backend.pages.individualProject.dashboard');
     }
+
+
+    public function viewDocument(){
+
+        return view('backend.pages.individualProject.document');
+    }
+
+
+    public function uploadDocument(){
+
+        return view('backend.pages.individualProject.upload-document');
+    }
+
+    public function viewIndividualDocument($id){
+
+        return view('backend.pages.individualProject.view-document',['documentId'=>$id]);
+    }
 }
