@@ -11,6 +11,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileManagementController;
+use App\Http\Controllers\InvitationController;
 
 
 // Route::get('/', function () {
@@ -117,7 +118,11 @@ Route::middleware([
         Route::get('/view/{id}',[IndividualProjectController::class,'viewIndividualDocument'])->name('documents.view');
         });
 
-        
+
+
+        Route::get('phase/{id}',[IndividualProjectController::class,'showProjectPhase'])->name('project.phases');
+
+        Route::get('members/{id}',[IndividualProjectController::class,'projectUser'])->name('project.users');
      });
 
 
@@ -155,6 +160,16 @@ Route::middleware([
 
 
 });
+
+
+
+
+
+   /****************************************  INVITATION PAGE  *********************************************/
+        Route::get('/invitations/{token}', [InvitationController::class, 'show'])->name('invitations.show');
+        Route::post('/invitations/{token}/accept', [InvitationController::class, 'accept'])->middleware(['auth'])->name('invitations.accept');
+        Route::post('/invitations/{token}/decline', [InvitationController::class, 'decline'])->middleware(['auth'])->name('invitations.decline');
+        Route::post('/invitations/{token}/register', [InvitationController::class, 'registerAndAccept'])->name('invitations.register');
 
 
 

@@ -31,4 +31,20 @@ class IndividualProjectController extends Controller
 
         return view('backend.pages.individualProject.view-document',['documentId'=>$id]);
     }
+
+
+
+    public function showProjectPhase($id){
+
+        $project=Project::find($id);
+
+        return view('backend.pages.individualProject.project-phase',['project'=>$project]);
+    }
+
+
+    public function projectUser($id){
+        $project=Project::find($id);
+
+        return view('backend.pages.individualProject.project-user',['project'=>$project]);
+    }
 }

@@ -21,7 +21,9 @@ class ProjectController extends Controller
             return redirect()->back()->with('error', 'Project not found');
         }
 
-
         return view('backend.pages.project.show', compact('project'));
     }
+
+    
+
 }

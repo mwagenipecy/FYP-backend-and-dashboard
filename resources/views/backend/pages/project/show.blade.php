@@ -1,6 +1,5 @@
-@extends('layouts.app')
-@section('main-content')
-
+@extends('layouts.project')
+@section('project')
 
 
  <livewire:project.show :project="$project" />
