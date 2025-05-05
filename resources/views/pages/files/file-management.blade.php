@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('page')
     <div class="flex items-center justify-between">
-        <h2 class="my-4 text-xl font-semibold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white">
+        <h2 class="my-4 text-xl font-semibold leading-none tracking-tight text-gray-900 md:text-4xl xy:text-white">
             Documents Management
         </h2>
         {{-- <div class="space-x-2">

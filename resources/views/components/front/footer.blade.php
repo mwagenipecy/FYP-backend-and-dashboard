@@ -10,7 +10,7 @@
               <img class=" h-12 w-12 " src="{{ asset('/assets/img/udsmlogo.png') }}" alt="Logo Light" />
               <div class="flex justify-between mx-4  item-center">
               <h1 class="font-bold strong text-4xl mt-2 text-blue-700"> UHUB </h1>
-              <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
+              <img class="xc nm" src="images/logo-xy.svg" alt="Logo xy" />
 
               </div>
 

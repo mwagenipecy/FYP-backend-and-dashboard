@@ -1,10 +1,10 @@
-<nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+<nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 xy:bg-gray-800 xy:border-gray-700">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start rtl:justify-end">
                 <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar"
                     type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 xy:text-gray-400 xy:hover:bg-gray-700 xy:focus:ring-gray-600">
                     <span class="sr-only">Open sidebar</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@
                         </path>
                     </svg>
                 </button>
-                <a href="#" class="hidden lg:flex text-2xl font-semibold text-gray-900 dark:text-white">
+                <a href="#" class="hidden lg:flex text-2xl font-semibold text-gray-900 xy:text-white">
                     <img class="w-auto mr-2 h-10 " src="{{ asset('/dashboard/mainLogo.png') }}" alt="logo"  >
                 </a>
               
@@ -22,32 +22,32 @@
                 <div class="flex items-center ms-3">
                     <div>
                         <button type="button"
-                            class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                            class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 xy:focus:ring-gray-600"
                             aria-expanded="false" data-dropdown-toggle="dropdown-user">
                             <span class="sr-only">Open user menu</span>
                             <img class="w-8 h-8 rounded-full"
                                 src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
                         </button>
                     </div>
-                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow xy:bg-gray-700 xy:divide-gray-600"
                         id="dropdown-user">
                         <div class="px-4 py-3" role="none">
-                            <p class="text-sm text-gray-900 dark:text-white" role="none">
+                            <p class="text-sm text-gray-900 xy:text-white" role="none">
                                 {{ Auth::user()->name }}
                             </p>
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                            <p class="text-sm font-medium text-gray-900 truncate xy:text-gray-300" role="none">
                                 {{ Auth::user()->email }}
                             </p>
                         </div>
                         <ul class="py-1" role="none">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 xy:text-gray-300 xy:hover:bg-gray-600 xy:hover:text-white"
                                     role="menuitem">Dashboard</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 xy:text-gray-300 xy:hover:bg-gray-600 xy:hover:text-white"
                                     role="menuitem">Settings</a>
                             </li>
                             <li>
@@ -55,7 +55,7 @@
                                     @csrf
                                     <a :href="route('logout')"
                                         onclick="event.preventDefault(); this.closest('form').submit();"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 xy:text-gray-300 xy:hover:bg-gray-600 xy:hover:text-white"
                                         role="menuitem">Sign out
                                     </a>
                                 </form>

@@ -24,15 +24,15 @@
     <div class="grid grid-cols-12 gap-4">
         <!-- Card section spanning 8/12 columns -->
         <div class="col-span-12 md:col-span-12">
-            <div class="max-w-full w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
+            <div class="max-w-full w-full bg-white rounded-lg shadow xy:bg-gray-800 p-4 md:p-6">
                 <div class="flex justify-between mb-5">
                     <div class="flex justify-between mb-3">
-                        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">Ideas Trend</h5>
+                        <h5 class="text-xl font-bold leading-none text-gray-900 xy:text-white pe-1">Ideas Trend</h5>
                     </div>
                     <div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="lastDaysdropdown"
                             data-dropdown-placement="bottom" type="button"
-                            class="px-3 py-2 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            class="px-3 py-2 inline-flex items-center text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 xy:focus:ring-gray-700 xy:bg-gray-800 xy:text-gray-400 xy:border-gray-600 xy:hover:text-white xy:hover:bg-gray-700">
                             Filter
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
@@ -41,16 +41,16 @@
                             </svg>
                         </button>
                         <div id="lastDaysdropdown"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 xy:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 xy:text-gray-200"
                                 aria-labelledby="dropdownDefaultButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Monthly</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 xy:hover:bg-gray-600 xy:hover:text-white">Monthly</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Daily</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 xy:hover:bg-gray-600 xy:hover:text-white">Daily</a>
                                 </li>
                             </ul>
                         </div>
@@ -326,7 +326,7 @@
                             show: true,
                             style: {
                                 fontFamily: "Inter, sans-serif",
-                                cssClass: 'text-xs font-normal fill-gray-500 dark:fill-gray-400'
+                                cssClass: 'text-xs font-normal fill-gray-500 xy:fill-gray-400'
                             }
                         },
                         axisBorder: {
@@ -502,15 +502,15 @@
 
     <!-- Modal content -->
     <div class="relative w-full max-w-2xl max-h-full z-50">
-        <div class="bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="bg-white rounded-lg shadow xy:bg-gray-700">
             
             <!-- Modal header -->
-            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            <div class="flex items-start justify-between p-4 border-b rounded-t xy:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 xy:text-white">
                     New Project Idea
                 </h3>
                 <button type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center xy:hover:bg-gray-600 xy:hover:text-white"
                         data-modal-hide="createIdeaModal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                          fill="none" viewBox="0 0 14 14">

@@ -354,7 +354,7 @@ class PhaseManagement extends Component
                 'New Stage Submission',
                 'A new submission has been made for stage "' . $this->currentStage->name . '" in project "' . $this->project->title . '".',
                 'Review Submission',
-                route('projects.show', ['project' => $this->project->id, 'tab' => 'phases']),
+                route('projects.list', ['project' => $this->project->id, 'tab' => 'phases']),
                 'info'
             );
         }
@@ -547,7 +547,7 @@ class PhaseManagement extends Component
     {
         $user = Auth::user();
         return $this->project->users()
-            ->wherePivot('role', 'supervisor')
+           // ->wherePivot('role', 'supervisor')
             ->where('users.id', $user->id)
             ->exists();
     }
