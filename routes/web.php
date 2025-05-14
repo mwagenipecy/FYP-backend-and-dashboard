@@ -237,6 +237,10 @@ Route::prefix('frontend')->group(function(){
         Route::get("hub-page/{id}", [HubManagementController::class,'viewHub'])->name('hub_page');
 
 
+        // application window 
+
+        Route::get('applicationWindow',[HubManagementController::class,'applicationWindow'])->name('application.window');
+
 });
 
 

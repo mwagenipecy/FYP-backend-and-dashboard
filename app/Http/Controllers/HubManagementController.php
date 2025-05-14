@@ -19,4 +19,10 @@ class HubManagementController extends Controller
             'hub'=>$hub,
         ]);
     }
+
+
+    public function applicationWindow(){
+
+        return view("frontend.hub-application-window");
+    }
 }

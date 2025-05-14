@@ -8,7 +8,7 @@
 <div class="bg-[#EB688C] text-white text-center py-4 px-6 shadow-xl  flex items-center justify-center animate-bounce">
     <p class="text-lg font-bold">
         🚨 Registration window is open!
-        <a href="#" class="underline font-extrabold hover:text-yellow-300 transition-all">Click to apply</a>
+        <a href="{{ route('application.window') }}" class="underline font-extrabold hover:text-yellow-300 transition-all">Click to apply</a>
     </p>
 </div>
 
