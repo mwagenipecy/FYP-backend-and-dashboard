@@ -23,6 +23,7 @@ class ProjectInvitationMail extends Mailable implements ShouldQueue
     public function __construct(Invitation $invitation)
     {
         $this->invitation = $invitation;
+
     }
 
     /**

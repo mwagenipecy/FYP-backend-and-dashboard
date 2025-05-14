@@ -21,6 +21,8 @@ class NotificationService
      */
     public static function sendToUser(User $user, string $subject, string $body, string $actionText, string $actionURL, string $type = 'info')
     {
+
+        
         $user->notify(new ProjectNotification([
             'id' => uniqid(),
             'subject' => $subject,

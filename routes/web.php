@@ -41,7 +41,7 @@ Route::middleware([
     ])->group(function () {
    
     Route::get('/user-dashboard', function () {
-       return view('/dashboard'); 
+       return view('dashboard'); 
 
     })->name('dashboard');
 

@@ -314,9 +314,12 @@ class ProjectUserManagement extends Component
             'invitationRole' => 'required|in:member,supervisor',
             'invitationMessage' => 'nullable|string|max:500',
         ]);
+
         
         foreach ($this->selectedUsersToInvite as $userId) {
             $user = User::find($userId);
+
+
             
             // Create invitation record
             $invitation = Invitation::create([
@@ -330,6 +333,9 @@ class ProjectUserManagement extends Component
                 'invited_by' => Auth::id(),
                 'expires_at' => now()->addDays(7),
             ]);
+
+
+           
             
             // Send notification to the user
             NotificationService::sendToUser(

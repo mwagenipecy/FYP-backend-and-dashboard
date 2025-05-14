@@ -80,4 +80,25 @@ class Project extends Model
     }
 
 
+    public function userProjects(){
+
+        return $this->belongsToMany(Project::class, 'user_has_projects', 'user_id', 'project_id');
+
+    }
+
+
+
+    public function project(){
+
+        return $this->belongsToMany(Project::class, 'user_has_projects', 'user_id', 'project_id');
+
+    }
+
+
+    public function user(){
+
+        return $this->belongsToMany(Project::class, 'user_has_projects', 'user_id', 'project_id');
+
+    }
+
 }
