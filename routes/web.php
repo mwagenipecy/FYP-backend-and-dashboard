@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\Page\HubListController;
+use App\Http\Controllers\BlogManagementController;
 use App\Http\Controllers\HubManagementController;
 use App\Http\Controllers\IndividualProjectController;
 use App\Http\Controllers\MemberOnBoardingController;
@@ -103,6 +104,15 @@ Route::middleware([
         
     });
 
+
+
+    /********************************************** BLOG MANAGEMENT  **************************/
+    Route::group(['prefix'=>'blogs'],function(){
+
+
+        Route::get('list',[BlogManagementController::class,'blogList'])->name('blog.list');
+
+    });
 
 
 

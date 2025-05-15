@@ -35,7 +35,8 @@
 
 
 {{-- blog list  --}}
-<livewire:frontend.component.blog />
+
+<livewire:post-management.posts-list />
 
 
 {{-- contact  us page # --}}

@@ -354,7 +354,7 @@ class PhaseManagement extends Component
                 'New Stage Submission',
                 'A new submission has been made for stage "' . $this->currentStage->name . '" in project "' . $this->project->title . '".',
                 'Review Submission',
-                route('projects.show', ['project' => $this->project->id, 'tab' => 'phases']),
+                route('projects.list'),
                 'info'
             );
         }
@@ -422,7 +422,7 @@ class PhaseManagement extends Component
             'Submission ' . ucfirst($action),
             'Your submission for stage "' . $this->currentStage->name . '" has been ' . $action . '.',
             'View Feedback',
-            route('projects.show', ['project' => $this->project->id?? 2, 'tab' => 'phases']),
+            route('projects.list'),
             $action === 'approved' ? 'success' : 'warning'
         );
         

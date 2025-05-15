@@ -4,13 +4,13 @@
         <div class="col-span-1">
             <div class="relative">
                 <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                <input wire:model.debounce.300ms="search" type="text" placeholder="Search for hubs" 
+                <input wire:model.live="search" type="text" placeholder="Search for hubs" 
                     class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
         </div>
         <div class="col-span-1">
             <div class="relative">
-                <select wire:model="supervisorFilter" class="w-full px-4 py-2 border border-gray-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select wire:model.live="supervisorFilter" class="w-full px-4 py-2 border border-gray-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="">All Supervisors</option>
                     @foreach($supervisors as $supervisor)
                         <option value="{{ $supervisor->id }}">{{ $supervisor->name }}</option>
@@ -21,7 +21,7 @@
         </div>
         <div class="col-span-1">
             <div class="relative">
-                <select wire:model="statusFilter" class="w-full px-4 py-2 border border-gray-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select wire:model.live="statusFilter" class="w-full px-4 py-2 border border-gray-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="">All Status</option>
                     <option value="active">Active</option>
                     <option value="inactive">Inactive</option>

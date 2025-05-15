@@ -16,6 +16,7 @@ class Stage extends Model
         'project_id',
         'phase_id',
         'order',
+        'end_date'
     ];
 
     public function project()

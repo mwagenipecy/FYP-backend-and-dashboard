@@ -21,6 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger('phase_id')->nullable();
             $table->foreign('phase_id')->references('id')->on('project_phases')->onDelete('set null');
             $table->integer('order');
+            $table->timestamp('end_date')->nullable();
             $table->timestamps();
         });
     }
