@@ -1,13 +1,8 @@
 @extends('layouts.app')
-
 @section('main-content')
 
 
 
-
-
-<livewire:dynamic-question.activity-question-builder  />
-
-
+ <livewire:backend.components.student.student-profiles />
 
 @endsection

@@ -5,8 +5,8 @@
         <div class="flex justify-between items-center mb-12">
     <div>
         <h2 class="text-2xl font-bold text-gray-900">
-            <span class="text-black">What Our</span>
-            <span class="text-blue-600"> Clients</span>
+            <span class="text-black">What </span>
+            <span class="text-blue-600"> Students</span>
             <span class="text-black"> Say</span>
         </h2>
         <p class="text-sm text-gray-600 mt-1">Real experiences from students and others we've supported.</p>

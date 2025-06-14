@@ -19,30 +19,19 @@
 
         <!-- Main content -->
         <main class="flex-1 px-6 py-4">
-            <!-- Header -->
-            <div class="flex justify-between items-center mb-6">
+           
+
+            <livewire:backend.components.hub.hub-overview />
+
+
+             <!-- Header -->
+             <div class="flex mt-6 justify-between items-center mb-6">
                 <h1 class="text-2xl font-bold text-gray-800">All Hubs</h1>
                 <button id="openModalBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center">
                     <i class="fas fa-plus mr-2"></i>
                     Add New Hub
                 </button>
             </div>
-
-
-            @include('components.backend.card-metrics',[
-                'firstCardTitle' => "Total Hubs",
-                'firstValue'=>$totalHubs,
-                'visible'=>true,
-                'secondCardTitle' => "Active Hubs",
-                'visible2'=>true,
-                'secondValue' => $activeHubs,
-                'thirdCardTitle' => "Inactive Hubs",
-                'visible3'=>true,
-                'thirdValue' => $totalHubs - $activeHubs,
-                'fourthCardTitle' => "Total Projects",
-                'visible4'=>true,
-                'fourthValue' => $totalProject,
-            ])
 
 
            <livewire:backend.components.hub.hub-list-table  />

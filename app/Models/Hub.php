@@ -28,6 +28,17 @@ class Hub extends Model
   }
 
 
+  public function memberships()
+    {
+        return $this->hasMany(HubMembership::class);
+    }
+
+
+  public function documents()
+{
+    return $this->hasMany(Document::class);
+}
+
 
   public function supervisor()
   {

@@ -32,4 +32,18 @@ class HubListController extends Controller
    return view('backend.pages.hubs.setting');
    
  }
+
+
+ public function viewHubSummary($id){
+
+
+    return view('backend.pages.hubs.hubSummary',
+    [
+        'hubId'=>$id,
+        
+    ]);
+ }
+
+
+
 }

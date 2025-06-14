@@ -23,4 +23,11 @@ class ProjectIdea extends Model
         return $this->belongsTo(User::class);
     }
 
+    // In ProjectIdea.php
+public function projects()
+{
+    return $this->hasOne(Project::class,'idea_id');
+}
+
+
 }

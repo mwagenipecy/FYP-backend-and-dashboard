@@ -20,10 +20,25 @@
         <!-- Main content -->
         <main class="flex-1 px-6 py-4">
             <!-- Header -->
+             <div class="flex justify-between p-2"> 
             <div class="flex justify-between items-center mb-6">
                 <h1 class="text-2xl font-bold text-gray-800">All Hubs</h1>
                 
             </div>
+
+
+
+                <a href="{{ route('hub.summary',1) }}"
+                class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg shadow transition duration-300 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                View Hub Info
+                </a>
+
+                </div>
 
 
           

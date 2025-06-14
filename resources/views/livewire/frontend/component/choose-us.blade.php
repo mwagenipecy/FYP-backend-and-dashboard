@@ -3,18 +3,25 @@
         <div class="bb ze ki xn wq">
             <div class="tc wf gg qq">
                 <!-- About Images -->
-                <div class="animate_left xc gn gg jn/2 i">
-                    <div>
-                        <img src="{{ asset('/assets/customer/shape-05.svg') }}" alt="Shape" class="h -ud-left-5 x" />
-                        <img src="{{ asset('/assets/customer/about-01.png') }}" alt="About" class="ib" />
-                        <img src="{{ asset('/assets/customer/about-02.png') }}" alt="About" />
+                <div class="animate_left xc gn  jn/2 i">
+                    <div class="rounded-lg">
+                        <img src="{{ asset('/assets/customer/shape-06.svg') }}" alt="Shape" />
+                        
+                        <!-- Main image with blue border and rounded corners -->
+                        <img src="{{ asset('/newImg/img22.jpeg') }}" alt="About" class="ob gb rounded-lg border-4 border-blue-500" />
+
                     </div>
+
                     <div>
                         <img src="{{ asset('/assets/customer/shape-06.svg') }}" alt="Shape" />
-                        <img src="{{ asset('/assets/customer/about-03.png') }}" alt="About" class="ob gb" />
-                        <img src="{{ asset('/assets/customer/shape-07.svg') }}" alt="Shape" class="bb" />
+                        <!-- Second image with blue border and rounded corners -->
+                        <img src="{{ asset('/newImg/im11.jpeg') }}" alt="About" class="ib rounded-lg border-4 border-blue-500" />
                     </div>
                 </div>
+
+
+
+
                 <!-- About Content -->
                 <div class="animate_right jn/2">
                     <h4 class="ek yj mk gb">Why Choose Us😊</h4>
@@ -23,7 +30,7 @@
                         projects.
                     </p>
 
-                    <a href="https://www.youtube.com/watch?v=gJBP0iOE9PU&pp=ygUFY29pY3Q%3D" data-fslightbox class="vc wf hg mb">
+                    <a href="https://www.youtube.com/watch?v=MHrLO8RoOLo" target="_blank" data-fslightbox class="vc wf hg mb">
                         <span class="tc wf xf be dd rg i gh ua">
                             <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                             <img src="{{ asset('/assets/customer/icon-play.svg') }}" alt="Play" />

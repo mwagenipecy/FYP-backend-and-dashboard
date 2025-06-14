@@ -5,6 +5,7 @@ use App\Http\Controllers\BlogManagementController;
 use App\Http\Controllers\HubManagementController;
 use App\Http\Controllers\IndividualProjectController;
 use App\Http\Controllers\MemberOnBoardingController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ProjectIdeaController;
 use App\Http\Controllers\ProjectStageController;
@@ -61,6 +62,7 @@ Route::middleware([
       
         Route::get('/list',[HubListController::class,'index'] )->name('hub_list');
         Route::get('settings',[HubListController::class,'viewSettings'])->name('hub.settings');
+        Route::get('hub/summary/{id}',[HubListController::class,'viewHubSummary'])->name('hub.summary');
 
 
     });
@@ -136,6 +138,14 @@ Route::middleware([
      });
 
 
+
+     /********************************************** STUDENT PROFILE *****************************/
+     Route::group(['prefix'=>'profile'],function(){
+
+        Route::get('list',[ProfileController::class,'index'])->name('student.profile.list');
+
+
+     });
 
 
 
@@ -215,6 +225,25 @@ Route::get('demo12343',function(){
 
 
 
+  Route::get('demo123ds43',function(){
+
+    return view('welcome');
+  })->name('activity.preview');
+
+
+  Route::get('demo123ds43',function(){
+
+    return view('welcome');
+  })->name('activity.create');
+  
+
+  Route::get('demo123sdds43',function(){
+
+    return view('welcome');
+  })->name('activity.edit');
+  
+
+  
 
 // front end
 

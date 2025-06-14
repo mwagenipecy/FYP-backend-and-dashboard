@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('regno')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('fieldType')->nullable(); // Assuming this is a string, adjust as necessary
+            $table->string('userType')->nullable(); // Assuming this is a string, adjust as necessary
             $table->string('password');
             $table->unsignedBigInteger('role_id')->nullable();
             $table->unsignedBigInteger('level_id')->nullable();
